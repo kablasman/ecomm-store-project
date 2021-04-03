@@ -4,9 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Cabin:wght@400;500&family=Comfortaa&family=Poppins:wght@300&family=Questrial&family=Source+Sans+Pro&display=swap');
 
 :root {
-    --lightmocha: #F5E7D6;
-    --mocha: #E0C8AB;
-    --darkmocha: #C99C6A;
+    --lightmocha: #F6F5DD;
+    --mocha:		#EAE4C3;
+    --darkmocha: #D6D1B4;
     --font: 'Cabin', sans-serif;
 }
 
