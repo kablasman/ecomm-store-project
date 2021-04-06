@@ -7,6 +7,7 @@
     --lightmocha: #F6F5DD;
     --mocha:		#EAE4C3;
     --darkmocha: #D6D1B4;
+    --darker: #c5c0a6;
     --font: 'Cabin', sans-serif;
 }
 
@@ -20,12 +21,16 @@ main {
 }
 
 nav {
-    width: 60%;
+    width: 80%;
     padding: 1em;
 }
 
 nav ul li ul {
     position: absolute;
+}
+
+.navigation ul  {
+    display: flex;
 }
 
 .page-header {
@@ -43,7 +48,7 @@ nav ul li ul {
 .menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -66,7 +71,7 @@ nav ul li ul {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-top: 0.5em;
+    margin-top: 0;
     padding-left: 0;
     padding-top: 1em;
     width: 10em;
@@ -78,13 +83,56 @@ nav ul li ul {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .submenu li:hover {
     background-color: var(--darkmocha);
     border-radius: 0.7em;
+}
+
+.search {
+    width: 30%; 
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 0.3em;
+}
+
+.find {
+    position: relative;
+    background-color: var(--darkmocha);
+    height: 2em;
+    width: 30%;
+    border-radius: 1em;
+    border: none;
+    color: black;
+}
+
+.material-icons {
+    background-color: transparent;
+    border: none;
+    color: black;
+    padding-top: 0.2em;
+}
+
+.find:hover {
+    background-color: var(--darker);
+}
+
+.your-products {
+    display: block;
+    padding-right: 0.3em;
+}
+
+.search:hover .find:hover {
+    transform: translate(1%);
+    transition-duration: 0.3s;
+    width: 80%;
 }
 
 
