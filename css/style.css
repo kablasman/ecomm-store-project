@@ -4,16 +4,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Cabin:wght@400;500&family=Comfortaa&family=Poppins:wght@300&family=Questrial&family=Source+Sans+Pro&display=swap');
 
 :root {
-    --lightmocha: #F6F5DD;
-    --mocha:		#EAE4C3;
-    --darkmocha: #D6D1B4;
-    --darker: #c5c0a6;
+    --lightmocha: #FFF4DE;
+    --mocha:		#F5E3BE;
+    --darkmocha: #E8CF9E;
+    --darker: #AC7F24;
     --font: 'Cabin', sans-serif;
 }
 
 html {
     font-family: var(--font);
-    background-color: var(--mocha);
+    background-color: var(--lightmocha);
 }
 
 main {
@@ -24,6 +24,7 @@ nav {
     width: 80%;
     padding: 1em;
 }
+
 
 nav ul li ul {
     position: absolute;
@@ -39,7 +40,7 @@ nav ul li ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: var(--lightmocha);
+    background-color: var(--darkmocha);
     width: 100%;
     margin: 0;
     padding: 0;
@@ -68,7 +69,7 @@ nav ul li ul {
 }
 
 .submenu {
-    background-color: var(--lightmocha);
+    background-color: var(--darkmocha);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -90,7 +91,7 @@ nav ul li ul {
 }
 
 .submenu li:hover {
-    background-color: var(--darkmocha);
+    background-color: var(--mocha);
     border-radius: 0.7em;
 }
 
@@ -103,7 +104,7 @@ nav ul li ul {
 
 .find {
     position: relative;
-    background-color: var(--darkmocha);
+    background-color: var(--lightmocha);
     height: 2em;
     width: 3em;
     border-radius: 1em;
@@ -118,7 +119,7 @@ nav ul li ul {
 }
 
 .find:hover {
-    background-color: var(--darker);
+    background-color: var(--mocha);
 }
 
 .your-products {
