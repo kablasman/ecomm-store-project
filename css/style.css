@@ -17,7 +17,7 @@ html {
 }
 
 main {
-    padding: 3em 1em;
+    padding: 3.5em 1em;
 }
 
 nav {
@@ -29,8 +29,10 @@ nav ul li ul {
     position: absolute;
 }
 
-.navigation ul  {
+.navigation ul {
     display: flex;
+    justify-content: space-evenly;
+    padding-top: 0.4em;
 }
 
 .page-header {
@@ -93,21 +95,17 @@ nav ul li ul {
 }
 
 .search {
-    width: 30%; 
+    width: 6em;
     align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    padding-top: 0.3em;
+    padding-top: 0.8em;
+    right: 0;
 }
 
 .find {
     position: relative;
     background-color: var(--darkmocha);
     height: 2em;
-    width: 30%;
+    width: 3em;
     border-radius: 1em;
     border: none;
     color: black;
@@ -117,7 +115,6 @@ nav ul li ul {
     background-color: transparent;
     border: none;
     color: black;
-    padding-top: 0.2em;
 }
 
 .find:hover {
@@ -126,13 +123,14 @@ nav ul li ul {
 
 .your-products {
     display: block;
-    padding-right: 0.3em;
+    padding-right: 0.4em;
+    padding-top: 0.3em;
 }
 
 .search:hover .find:hover {
-    transform: translate(1%);
+    transform: translate(-42%);
     transition-duration: 0.3s;
-    width: 80%;
+    width: 10em;
 }
 
 
