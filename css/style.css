@@ -30,6 +30,13 @@ nav ul li ul {
     position: absolute;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+
 .navigation ul {
     display: flex;
     justify-content: space-evenly;
