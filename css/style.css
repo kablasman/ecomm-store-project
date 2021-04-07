@@ -13,7 +13,7 @@
 
 html {
     font-family: var(--font);
-    background-color: var(--lightmocha);
+    background-color: var(--mocha);
 }
 
 main {
@@ -36,7 +36,6 @@ nav ul li ul {
     gap: 1em;
 }
 
-
 .navigation ul {
     display: flex;
     justify-content: space-evenly;
@@ -47,7 +46,7 @@ nav ul li ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: var(--darkmocha);
+    background-color: var(--lightmocha);
     width: 100%;
     margin: 0;
     padding: 0;
@@ -76,7 +75,7 @@ nav ul li ul {
 }
 
 .submenu {
-    background-color: var(--darkmocha);
+    background-color: var(--lightmocha);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -98,7 +97,7 @@ nav ul li ul {
 }
 
 .submenu li:hover {
-    background-color: var(--mocha);
+    background-color: var(--darkmocha);
     border-radius: 0.7em;
 }
 
@@ -111,7 +110,7 @@ nav ul li ul {
 
 .find {
     position: relative;
-    background-color: var(--lightmocha);
+    background-color: var(--darkmocha);
     height: 2em;
     width: 2em;
     border-radius: 1em;
@@ -126,7 +125,7 @@ nav ul li ul {
 }
 
 .find:hover {
-    background-color: var(--lightmocha);
+    background-color: var(--darkmocha);
 }
 
 .your-products {
@@ -140,6 +139,17 @@ nav ul li ul {
     width: 10em;
 }
 
+.filter-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+ 
+.filter-options li {
+    display: none;
+}
+.filter-options:hover {
+    display: block;
+}
 
 
 
