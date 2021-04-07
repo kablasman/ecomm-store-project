@@ -106,7 +106,7 @@ nav ul li ul {
     position: relative;
     background-color: var(--lightmocha);
     height: 2em;
-    width: 3em;
+    width: 2em;
     border-radius: 1em;
     border: none;
     color: black;
@@ -119,7 +119,7 @@ nav ul li ul {
 }
 
 .find:hover {
-    background-color: var(--mocha);
+    background-color: var(--lightmocha);
 }
 
 .your-products {
@@ -129,9 +129,11 @@ nav ul li ul {
 }
 
 .search:hover .find:hover {
-    transform: translate(-42%);
-    transition-duration: 0.3s;
+    transform: translate(-50%, -80%);
     width: 10em;
 }
+
+
+
 
 
