@@ -2,13 +2,15 @@
 
 /* index.html */
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Cabin:wght@400;500&family=Comfortaa&family=Poppins:wght@300&family=Questrial&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Fredoka+One&display=swap');
 
 :root {
     --lightmocha: #FFF4DE;
     --mocha:		#F5E3BE;
     --darkmocha: #E8CF9E;
-    --darker: #AC7F24;
+    --darker: #bda678;
     --font: 'Cabin', sans-serif;
+    --logo: 'Fredoka One', cursive;
 }
 
 html {
@@ -17,12 +19,12 @@ html {
 }
 
 main {
-    padding: 3.5em 1em;
+    padding: 6em 1em;
 }
 
 nav {
     width: 80%;
-    padding: 1em;
+    padding-top: 2em;
 }
 
 
@@ -34,6 +36,20 @@ nav ul li ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1em;
+}
+
+.logo {
+    font-size: 1.6em;
+    text-decoration: none;
+    color: var(--darker);
+    padding: 0.7em;
+    width: 5em;
+    font-family: var(--logo);
+}
+
+.heading {
+    font-size: 1.8em;
+    text-align: center;
 }
 
 .navigation ul {
@@ -104,7 +120,7 @@ nav ul li ul {
 .search {
     width: 6em;
     align-items: center;
-    padding-top: 0.8em;
+    padding-top: 2em;
     right: 0;
 }
 
@@ -130,8 +146,8 @@ nav ul li ul {
 
 .your-products {
     display: block;
-    padding-right: 0.4em;
-    padding-top: 0.3em;
+    padding-right: 1em;
+    padding-top: 1.5em;
 }
 
 .search:hover .find:hover {
@@ -140,15 +156,17 @@ nav ul li ul {
 }
 
 .filter-options {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 1em;
 }
  
 .filter-options li {
     display: none;
 }
-.filter-options:hover {
-    display: block;
+.filter-options li:hover {
+    display: flex;
 }
 
 
