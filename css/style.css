@@ -6,9 +6,9 @@
 
 :root {
     --lightmocha: #FFF4DE;
-    --mocha:		#F5E3BE;
+    --mocha:		#f7e4c0;
     --darkmocha: #E8CF9E;
-    --darker: #bda678;
+    --darker: #d3bd90;
     --font: 'Cabin', sans-serif;
     --logo: 'Fredoka One', cursive;
 }
@@ -19,14 +19,13 @@ html {
 }
 
 main {
-    padding: 6em 1em;
+    padding: 6em 0;
 }
 
 nav {
     width: 80%;
     padding-top: 2em;
 }
-
 
 nav ul li ul {
     position: absolute;
@@ -50,6 +49,12 @@ nav ul li ul {
 .heading {
     font-size: 1.8em;
     text-align: center;
+    background-image: url(../img/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3em;
+    color: var(--lightmocha);
+    text-shadow: 2px 3px black;
 }
 
 .navigation ul {
@@ -75,6 +80,15 @@ nav ul li ul {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    font-family: var(--logo);
+}
+
+.filters {
+    padding: 0 1em;
+}
+
+.results {
+    padding: 0 1em;
 }
 
 .menu li ul {
@@ -102,6 +116,7 @@ nav ul li ul {
     width: 10em;
     height: 10em;
     border-radius: 0.8em;
+    font-family: var(--font);
 }
 
 .submenu li {
@@ -113,7 +128,7 @@ nav ul li ul {
 }
 
 .submenu li:hover {
-    background-color: var(--darkmocha);
+    background-color: var(--darker);
     border-radius: 0.7em;
 }
 
@@ -126,7 +141,7 @@ nav ul li ul {
 
 .find {
     position: relative;
-    background-color: var(--darkmocha);
+    background-color: var(--darker);
     height: 2em;
     width: 2em;
     border-radius: 1em;
@@ -141,7 +156,7 @@ nav ul li ul {
 }
 
 .find:hover {
-    background-color: var(--darkmocha);
+    background-color: var(--darker);
 }
 
 .your-products {
@@ -168,6 +183,7 @@ nav ul li ul {
 .filter-options li:hover {
     display: flex;
 }
+
 
 
 
