@@ -9,8 +9,10 @@
     --mocha:		#f7e4c0;
     --darkmocha: #E8CF9E;
     --darker: #d3bd90;
+    --black: #000;
     --font: 'Cabin', sans-serif;
     --logo: 'Fredoka One', cursive;
+    --pad-and-gap: 1em;
 }
 
 html {
@@ -18,8 +20,18 @@ html {
     background-color: var(--mocha);
 }
 
+header {
+    width: 100%;
+}
+
+body {
+    background-color: var(--mocha);
+    
+}
+
 main {
-    padding: 6em 0;
+    padding: calc(var(--pad-and-gap) * 6) 0;
+    color: var(--black);
 }
 
 nav {
@@ -34,16 +46,14 @@ nav ul li ul {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1em;
+    gap: var(--pad-and-gap);
 }
 
 .logo {
     font-size: 2em;
     text-decoration: none;
     color: var(--darker);
-    padding: 0 0.5em;
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
+    padding: calc(var(--pad-and-gap)/3);
     width: 4.1em;
     font-family: var(--logo);
 }
@@ -62,7 +72,7 @@ nav ul li ul {
 .navigation ul {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 0.4em;
+    padding: calc(var(--pad-and-gap)/2);
 }
 
 .page-header {
@@ -70,11 +80,9 @@ nav ul li ul {
     flex-direction: row;
     justify-content: space-between;
     background-color: var(--lightmocha);
-    width: 100%;
     margin: 0;
-    padding: 0;
+    padding: var(--pad-and-gap);
     position: fixed;
-    top: 0;
 }
 
 .menu {
@@ -86,11 +94,11 @@ nav ul li ul {
 }
 
 .filters {
-    padding: 0 1em;
+    padding: 0 var(--pad-and-gap);
 }
 
 .results {
-    padding: 0 1em;
+    padding: 0 var(--pad-and-gap);
 }
 
 .menu li ul {
@@ -114,7 +122,7 @@ nav ul li ul {
     align-items: center;
     margin-top: 0;
     padding-left: 0;
-    padding-top: 1em;
+    padding-top: var(--pad-and-gap);
     width: 10em;
     height: 10em;
     border-radius: 0.8em;
@@ -137,7 +145,7 @@ nav ul li ul {
 .search {
     width: 6em;
     align-items: center;
-    padding-top: 2em;
+    padding-top: calc(var(--pad-and-gap)*2);
     right: 0;
 }
 
@@ -162,9 +170,10 @@ nav ul li ul {
 }
 
 .your-products {
-    display: block;
-    padding-right: 1em;
-    padding-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    padding-right: var(--pad-and-gap);
+    padding-top: calc(var(--pad-and-gap)*1.5);
 }
 
 .search:hover .find:hover {
@@ -175,17 +184,22 @@ nav ul li ul {
 .filter-options {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding-bottom: 1em;
+    justify-content: space-between;
+    padding-bottom: var(--pad-and-gap);
+    flex-wrap: wrap;
 }
  
 .filter-options li {
     display: none;
 }
+
 .filter-options li:hover {
     display: flex;
 }
 
+.sort {
+    padding-right: calc(var(--pad-and-gap)/2);
+}
 
 
 
