@@ -38,10 +38,12 @@ nav ul li ul {
 }
 
 .logo {
-    font-size: 1.6em;
+    font-size: 2em;
     text-decoration: none;
     color: var(--darker);
-    padding: 0.7em;
+    padding: 0 0.5em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
     width: 5em;
     font-family: var(--logo);
 }
