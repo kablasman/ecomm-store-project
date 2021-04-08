@@ -8,7 +8,7 @@
     --lightmocha: #FFF4DE;
     --mocha:		#f7e4c0;
     --darkmocha: #E8CF9E;
-    --darker: #d3bd90;
+    --darker: #C3A579;
     --black: #000;
     --font: 'Cabin', sans-serif;
     --logo: 'Fredoka One', cursive;
@@ -62,7 +62,7 @@ nav ul li ul {
     background-size: cover;
     background-repeat: no-repeat;
     padding: calc(var(--pad-and-gap)*2);
-    margin-top: calc(var(--pad-and-gap)*4);
+    margin-top: calc(var(--pad-and-gap)*2);
     color: var(--lightmocha);
     text-shadow: 2px 3px black;
 }
@@ -116,29 +116,30 @@ nav ul li ul {
 }
 
 .search {
-    grid-row-start: 2;
-    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 3;
     grid-column-end: 4;
-    padding-top: calc(var(--pad-and-gap)*1.5);
+    padding-top: var(--pad-and-gap);
 }
 
 .logo {
     grid-row-start: 1;
     grid-row-end: 1;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
     font-size: 2em;
     text-decoration: none;
     color: var(--darker);
     padding: calc(var(--pad-and-gap)/3);
-    width: 4em;
+    width: 6em;
     font-family: var(--logo);
     text-align: center;
 }
 
 .your-products {
-    grid-row-start: 1;
-    grid-row-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
     grid-column-start: 3;
     grid-column-end: 4;
     display: flex;
@@ -147,9 +148,7 @@ nav ul li ul {
 }
 
 .material-icons {
-    background-color: transparent;
-    border: none;
-    color: black;
+    color: var(--darker);
 }
 
 .navigation ul {
@@ -227,6 +226,7 @@ nav ul li ul {
         grid-row-end: 1;
         grid-column-start:1;
         grid-column-end: 2;
+        width: 4em;
     }
 
     .find {
@@ -238,6 +238,7 @@ nav ul li ul {
         grid-row-end: 1;
         grid-column-start: 3;
         grid-column-end: 4;
+        padding-top: calc(var(--pad-and-gap)*1.75);
     }
 
     .your-products {
@@ -256,7 +257,7 @@ nav ul li ul {
 
     .heading {
         margin: 0;
-        padding: calc(var(--pad-and-gap)*3);
+        padding: calc(var(--pad-and-gap)*4);
     }
 }
 
@@ -274,6 +275,7 @@ nav ul li ul {
         grid-row-end: 1;
         grid-column-start:1;
         grid-column-end: 2;
+        width: 4em;
     }
 
     .find {
@@ -285,6 +287,7 @@ nav ul li ul {
         grid-row-end: 1;
         grid-column-start: 3;
         grid-column-end: 4;
+        padding-top: calc(var(--pad-and-gap)*1.75);
     }
 
     .your-products {
@@ -303,6 +306,6 @@ nav ul li ul {
 
     .heading {
         margin: 0;
-        padding: calc(var(--pad-and-gap)*5);
+        padding: calc(var(--pad-and-gap)*6);
     }
 }
