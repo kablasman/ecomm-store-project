@@ -10,6 +10,9 @@
     --darkmocha: #E8CF9E;
     --darker: #C3A579;
     --black: #000;
+    --orange: #F6AF50;
+    --red: #F5604C;
+    --yellow: #FFE555;
     --font: 'Cabin', sans-serif;
     --logo: 'Fredoka One', cursive;
     --pad-and-gap: 1em;
@@ -30,6 +33,15 @@ main {
     color: var(--black);
 }
 
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
 nav {
     width: 80%;
     padding-top: 2em;
@@ -41,7 +53,7 @@ nav ul li ul {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: var(--pad-and-gap);
 }
 
@@ -58,10 +70,10 @@ nav ul li ul {
 .heading {
     font-size: 1.8em;
     text-align: center;
-    background-image: url(../img/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg);
+    background-image: url(../img/omar-flores-y2Krbtf4hcI-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: calc(var(--pad-and-gap)*2);
+    padding: calc(var(--pad-and-gap)*4);
     margin-top: calc(var(--pad-and-gap)*2);
     color: var(--lightmocha);
     text-shadow: 2px 3px black;
@@ -88,6 +100,10 @@ nav ul li ul {
 
 .results {
     padding: 0 var(--pad-and-gap);
+}
+
+.subheading {
+    margin: 1em 0;
 }
 
 .submenu {
@@ -130,7 +146,7 @@ nav ul li ul {
     grid-column-end: 4;
     font-size: 2em;
     text-decoration: none;
-    color: var(--darker);
+    color: var(--red);
     padding: calc(var(--pad-and-gap)/3);
     width: 6em;
     font-family: var(--logo);
@@ -144,11 +160,11 @@ nav ul li ul {
     grid-column-end: 4;
     display: flex;
     flex-direction: column;
-    padding: var(--pad-and-gap)
+    padding: var(--pad-and-gap);
 }
 
 .material-icons {
-    color: var(--darker);
+    color: var(--black);
 }
 
 .navigation ul {
@@ -179,25 +195,30 @@ nav ul li ul {
 }
 
 .submenu li:hover {
-    background-color: var(--darker);
+    background-color: var(--yellow);
     border-radius: 0.7em;
 }
 
-.find:hover {
-    background-color: var(--darker);
+/*.find:hover {
+    background-color: var(--orange);
 }
-
 .search:hover .find:hover {
     transform: translate(-50%, -80%);
     width: 10em;
-}
+}*/
 
 .filter-options {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     padding-bottom: var(--pad-and-gap);
     flex-wrap: wrap;
+}
+
+.filter-options legend:hover {
+    background-color: var(--orange); 
+    border-radius: 1em;
+    padding: 0 0.5em;
 }
  
 .filter-options li {
@@ -214,6 +235,20 @@ nav ul li ul {
 
 @media screen and (min-width: 40em) {
     
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: var(--pad-and-gap);
+    }
+
     .page-header {
         display: grid;
         grid-template-columns: auto 1fr auto auto;
@@ -262,6 +297,15 @@ nav ul li ul {
 
     .material-icons {
         color: var(--black);
+    }
+
+    .filter-options {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: var(--pad-and-gap);
+        flex-wrap: wrap;
+        font-size: 1em;
     }
 }
 
@@ -315,5 +359,14 @@ nav ul li ul {
 
     .material-icons {
         color: var(--black);
+    }
+
+    .filter-options {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: var(--pad-and-gap);
+        flex-wrap: wrap;
+        font-size: 1.2em;
     }
 }

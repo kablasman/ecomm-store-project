@@ -1,13 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
-  <defs>
-    <linearGradient id="linear-gradient" x1="0.5" y1="0.19" x2="0.5" y2="-2.715" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#c3a579"/>
-      <stop offset="0.537" stop-color="#857153"/>
-      <stop offset="1" stop-color="#62533d"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
   <g id="search_bar" data-name="search bar" transform="translate(-941.527 -449)">
-    <rect id="Rectangle_16" data-name="Rectangle 16" width="64" height="64" rx="32" transform="translate(941.527 449)" fill="url(#linear-gradient)"/>
+    <rect id="Rectangle_16" data-name="Rectangle 16" width="64" height="64" rx="32" transform="translate(941.527 449)" fill="#ffe555"/>
     <g id="magnifying_glass" data-name="magnifying glass" transform="translate(957.503 464.304)">
       <g id="Path_19" data-name="Path 19" fill="none" stroke-linecap="round">
         <path d="M13.664,0A13.664,13.664,0,1,1,0,13.664,13.664,13.664,0,0,1,13.664,0Z" stroke="none"/>
