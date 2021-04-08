@@ -259,6 +259,10 @@ nav ul li ul {
         margin: 0;
         padding: calc(var(--pad-and-gap)*4);
     }
+
+    .material-icons {
+        color: var(--black);
+    }
 }
 
 @media screen and (min-width: 70em) {
@@ -307,5 +311,9 @@ nav ul li ul {
     .heading {
         margin: 0;
         padding: calc(var(--pad-and-gap)*6);
+    }
+
+    .material-icons {
+        color: var(--black);
     }
 }
