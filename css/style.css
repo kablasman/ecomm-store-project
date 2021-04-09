@@ -14,6 +14,7 @@
     --red: #F5604C;
     --yellow: #FFE555;
     --green: #6DD666;
+    --blue: #6CC8F0;
     --font: 'Cabin', sans-serif;
     --logo: 'Fredoka One', cursive;
     --pad-and-gap: 1em;
@@ -50,6 +51,26 @@ nav {
 
 nav ul li ul {
     position: absolute;
+}
+
+button {
+    border-radius: 2em;
+    background-color: var(--blue);
+    margin-top: 1em;
+    margin-bottom: 2em;
+    padding: calc(var(--pad-and-gap)/2);
+    border: none;
+    box-shadow: 1px 1px black;
+    font-family: var(--logo);
+    font-size: 0.9em;
+}
+
+footer button {
+    text-align: center;
+}
+
+form fieldset legend {
+    padding: 0.5em 0;
 }
 
 .grid-container {
