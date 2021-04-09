@@ -1,8 +1,8 @@
 /* Note there a few "reset" styles given in reset.css. Review those before you begin */
 
 /* index.html */
-@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Cabin:wght@400;500&family=Comfortaa&family=Poppins:wght@300&family=Questrial&family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 :root {
     --lightmocha: #FFF4DE;
@@ -15,7 +15,8 @@
     --yellow: #FFE555;
     --green: #6DD666;
     --blue: #6CC8F0;
-    --font: 'Cabin', sans-serif;
+    --gold: #F5C51F;
+    --font: 'Raleway', sans-serif;
     --logo: 'Fredoka One', cursive;
     --pad-and-gap: 1em;
 }
@@ -44,6 +45,10 @@ h2 {
     margin: 0;
 }
 
+h3 {
+    text-transform: uppercase;
+}
+
 nav {
     width: 80%;
     padding-top: 2em;
@@ -55,14 +60,14 @@ nav ul li ul {
 
 button {
     border-radius: 2em;
-    background-color: var(--blue);
+    background-color: white;
     margin-top: 1em;
     margin-bottom: 2em;
     padding: calc(var(--pad-and-gap)/2);
+    align-items: center;
     border: none;
-    box-shadow: 1px 1px black;
-    font-family: var(--logo);
-    font-size: 0.9em;
+    box-shadow: 1px 1px var(--darker);
+    font-size: 1.2em;
 }
 
 footer button {
@@ -71,6 +76,21 @@ footer button {
 
 form fieldset legend {
     padding: 0.5em 0;
+}
+
+dd {
+    font-size: 1.5em;
+    padding: calc(var(--pad-and-gap)/2.5) 0;
+    margin: 0;
+    text-align: center;
+}
+
+a {
+    color: var(--black);
+}
+
+dl dd .material-icons {
+    color: var(--gold);
 }
 
 .grid-container {
@@ -113,7 +133,7 @@ form fieldset legend {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    font-family: var(--logo);
+    font-family: var(--font);
 }
 
 .filters {
@@ -239,6 +259,10 @@ form fieldset legend {
     flex-wrap: wrap;
 }
 
+.filter-list {
+    display: flex;
+}
+
 .filter-options legend:hover {
     background-color: var(--orange); 
     border-radius: 1em;
@@ -335,6 +359,12 @@ form fieldset legend {
 
 @media screen and (min-width: 70em) {
     
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: var(--pad-and-gap);
+    }
+
     .page-header {
         display: grid;
         grid-template-columns: auto 1fr auto auto;
