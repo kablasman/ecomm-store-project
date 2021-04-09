@@ -6,13 +6,14 @@
 
 :root {
     --lightmocha: #FFF4DE;
-    --mocha:		#f7e4c0;
+    --mocha:		#faeacc;
     --darkmocha: #E8CF9E;
     --darker: #C3A579;
     --black: #000;
     --orange: #F6AF50;
     --red: #F5604C;
     --yellow: #FFE555;
+    --green: #6DD666;
     --font: 'Cabin', sans-serif;
     --logo: 'Fredoka One', cursive;
     --pad-and-gap: 1em;
@@ -193,10 +194,11 @@ nav ul li ul {
     justify-content: space-around;
     justify-content: left;
     padding-left: calc(var(--pad-and-gap)/2);
+    align-items: center;
 }
 
 .submenu li:hover {
-    background-color: var(--yellow);
+    background-color: var(--green);
     border-radius: 0.7em;
 }
 
@@ -293,7 +295,7 @@ nav ul li ul {
 
     .heading {
         margin: 0;
-        padding: calc(var(--pad-and-gap)*4);
+        padding: calc(var(--pad-and-gap)*4.3);
     }
 
     .material-icons {
