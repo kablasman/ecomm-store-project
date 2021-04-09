@@ -14,8 +14,9 @@
     --red: #F5604C;
     --yellow: #FFE555;
     --green: #6DD666;
-    --blue: #6CC8F0;
+    --blue: #8893f5;
     --gold: #F5C51F;
+    --greyed-out: #7e7363;
     --font: 'Raleway', sans-serif;
     --logo: 'Fredoka One', cursive;
     --pad-and-gap: 1em;
@@ -47,11 +48,12 @@ h2 {
 
 h3 {
     text-transform: uppercase;
+    margin-bottom: calc(var(--pad-and-gap)/2);
 }
 
-nav {
-    width: 80%;
-    padding-top: 2em;
+h4 {
+    margin-top: calc(var(--pad-and-gap)/3);
+    margin-bottom: calc(var(--pad-and-gap)/3);
 }
 
 nav ul li ul {
@@ -61,13 +63,18 @@ nav ul li ul {
 button {
     border-radius: 2em;
     background-color: white;
-    margin-top: 1em;
-    margin-bottom: 2em;
+    margin-top: 0;
+    margin-bottom: var(--pad-and-gap);
     padding: calc(var(--pad-and-gap)/2);
     align-items: center;
     border: none;
     box-shadow: 1px 1px var(--darker);
     font-size: 1.2em;
+}
+
+button:hover {
+    background-color: var(--red);
+    color: white;
 }
 
 footer button {
@@ -80,17 +87,44 @@ form fieldset legend {
 
 dd {
     font-size: 1.5em;
-    padding: calc(var(--pad-and-gap)/2.5) 0;
+    padding: calc(var(--pad-and-gap)/3) 0;
     margin: 0;
-    text-align: center;
 }
 
 a {
     color: var(--black);
 }
 
+data del {
+    color: var(--greyed-out);
+    font-size: 1.2em;
+}
+
+data ins {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: var(--red);
+}
+
+dl dt {
+    padding-top: var(--pad-and-gap);
+}
+
 dl dd .material-icons {
     color: var(--gold);
+}
+
+form fieldset legend {
+    padding: calc(var(--pad-and-gap)/3) 0;
+}
+
+form fieldset ul {
+    padding-bottom: var(--pad-and-gap);
+}
+
+form fieldset:hover ul {
+    display: flex;
+    flex-direction: column;
 }
 
 .grid-container {
@@ -122,10 +156,23 @@ dl dd .material-icons {
 }
 
 .navigation {
+    width: 80%;
+    padding-top: 2em;
     grid-row-start: 3;
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 4;
+}
+
+.pagination {
+    padding: 0;
+    text-align: center;
+    margin-right: 0;
+}
+
+.page-footer {
+    background-color: var(--lightmocha);
+    padding: 1em;
 }
 
 .menu {
@@ -279,6 +326,14 @@ dl dd .material-icons {
 
 .sort {
     padding-right: calc(var(--pad-and-gap)/2);
+}
+
+#sort {
+    background-color: white;
+    border-radius: 0.5em;
+    font: var(--font);
+    box-shadow: 1px 1px var(--darker);
+    border: none;
 }
 
 @media screen and (min-width: 40em) {
