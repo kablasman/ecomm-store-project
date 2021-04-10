@@ -336,6 +336,36 @@ form fieldset:hover ul {
     border: none;
 }
 
+.my-checkbox {
+    display: flex;
+    cursor: pointer;
+}
+
+.my-checkbox > span {
+    padding: 0 calc(var(--pad-and-gap)/3);
+}
+
+.my-checkbox > input {
+    height: 1.1em;
+    width: 1.1em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    border: 1px solid var(--darker);
+    background-color: #fff;
+    border-radius: 0.33em;
+}
+
+.my-checkbox > input:checked {
+    background-color: var(--red);
+    border: var(--red);
+}
+
+.my-checkbox > input:hover {
+    background-color: var(--red);
+    border: var(--red);
+}
+
 @media screen and (min-width: 40em) {
     
     h1 {
