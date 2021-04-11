@@ -63,7 +63,7 @@ nav ul li ul {
 button {
     border-radius: 2em;
     background-color: white;
-    margin-top: 1em;
+    margin-top: var(--pad-and-gap);
     margin-bottom: var(--pad-and-gap);
     padding: calc(var(--pad-and-gap)/2);
     align-items: center;
