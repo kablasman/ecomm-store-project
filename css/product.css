@@ -278,6 +278,9 @@ form fieldset:hover ul {
     overflow: hidden;
 }
 
+.large-scale {
+    text-align: center;
+}
 .favourites:hover{
     background-color: var(--pink);
     color: white;
@@ -517,11 +520,20 @@ form fieldset:hover ul {
 }
 
 @media screen and (min-width: 70em) {
-    
-    .grid-container {
+   
+    div form fieldset {
+        grid-row-start: 1;
+    }
+
+    .product {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: var(--pad-and-gap);
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: calc(var(--pad-and-gap)*3);
+    }
+
+    .product-info {
+        grid-column-start: 2;
+        grid-column-end: 3;
     }
 
     .page-header {
