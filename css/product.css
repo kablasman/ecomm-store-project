@@ -10,6 +10,7 @@
     --black: #000;
     --orange: #F6AF50;
     --red: #F5604C;
+    --pink: #fd67a0;
     --yellow: #FFE555;
     --green: #6DD666;
     --blue: #8893f5;
@@ -54,6 +55,15 @@ h4 {
     margin-bottom: calc(var(--pad-and-gap)/3);
 }
 
+p {
+    font-size: 1.2em;
+}
+
+hr {
+    border-color: var(--lightmocha);
+    width: 80%;
+}
+
 nav ul li ul {
     position: absolute;
 }
@@ -61,7 +71,7 @@ nav ul li ul {
 button {
     border-radius: 2em;
     background-color: white;
-    margin-top: 0;
+    margin-top: var(--pad-and-gap);
     margin-bottom: var(--pad-and-gap);
     padding: calc(var(--pad-and-gap)/2);
     align-items: center;
@@ -116,10 +126,6 @@ form fieldset legend {
     padding: calc(var(--pad-and-gap)/3) 0;
 }
 
-form fieldset ul {
-    padding-bottom: var(--pad-and-gap);
-}
-
 form fieldset:hover ul {
     display: flex;
     flex-direction: column;
@@ -141,14 +147,14 @@ form fieldset:hover ul {
     justify-items: center;
 }
 
-.heading {
+/*.heading {
     font-size: 1.8em;
     text-align: center;
     padding: calc(var(--pad-and-gap)*4);
     margin-top: calc(var(--pad-and-gap)*2);
     color: var(--lightmocha);
     text-shadow: 2px 3px black;
-}
+}*/
 
 .navigation {
     width: 80%;
@@ -157,6 +163,21 @@ form fieldset:hover ul {
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 4;
+}
+
+.product {
+    margin: 7em 5em;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.product-info {
+    text-align: left;
+}
+
+.justify {
+    display: inline-block;
+    text-align: left;
 }
 
 .pagination {
@@ -250,6 +271,18 @@ form fieldset:hover ul {
 .material-icons {
     color: var(--black);
 }
+
+.favourites {
+    margin-top: 0;
+    background-color: #FFF;
+    overflow: hidden;
+}
+
+.favourites:hover{
+    background-color: var(--pink);
+    color: white;
+}
+
 
 .navigation ul {
     display: flex;
@@ -364,13 +397,59 @@ form fieldset:hover ul {
 @media screen and (min-width: 40em) {
     
     h1 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
-
+    
     h2 {
-        font-size: 1.4em;
+        font-size: 1.2em;
+        margin: 0;
+    }
+    
+    h3 {
+        text-transform: uppercase;
+        margin-bottom: calc(var(--pad-and-gap)/2);
+        font-size: 2.5em;
+    }
+    
+    h4 {
+        margin-top: calc(var(--pad-and-gap)/3);
+        margin-bottom: calc(var(--pad-and-gap)/3);
+        font-size: 1.5em;
     }
 
+    button {
+        width: 70%;
+        border-radius: 2em;
+        background-color: white;
+        margin-top: var(--pad-and-gap);
+        margin-bottom: var(--pad-and-gap);
+        padding: calc(var(--pad-and-gap)/2);
+        align-items: center;
+        border: none;
+        box-shadow: 1px 1px var(--darker);
+        font-size: 1.8em;
+    }
+
+    data del {
+        color: var(--greyed-out);
+        font-size: 1.5em;
+    }
+    
+    data ins {
+        text-decoration: none;
+        font-size: 1.8em;
+        color: var(--red);
+    }
+
+    div form fieldset {
+        font-size: 1.3em;
+    }
+
+    dl dt {
+        padding-top: var(--pad-and-gap);
+        font-size: 1.3em;
+    }
+    
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
