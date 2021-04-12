@@ -18,4 +18,30 @@ Read and complete the steps in the following two documents:
 - See the [project overview](https://www.notion.so/juneate/Project-Webstore-28443f753b344d60b0176a24e14f17c9) for details on submissions, as well as a form
 
 ### References
+
 #### search bar: https://www.youtube.com/watch?v=v1PeTDrw6OY
+#### Book Covers: https://www.postermywall.com/index.php/sizes/book-cover-template#
+
+##### The King of Drugs: Designed by David Watson
+##### Sunset: Designed by Alien Coo
+##### Left Alone: Designed by David Wa
+##### A New Vision to Success: Designed by David Wa
+##### The Baking Cookbook: Designed by David Wa
+##### Rise Above Wilderness: Designed by David Wa
+##### The Night Profecy: Designed by Marcus Aurelius Valerius Massentius
+##### Secret Recipes: Designed by Sirle K
+##### Drawn to the Sky: Designed by Sirle K
+#### Suggested Book Covers
+
+##### Green Hell: Designed by Marcus Aurelius Valerius Massentius
+##### The Trucker: Designed by Paula
+##### 72 Hours: Designed by David Wa
+##### Ice Desert: Designed by Marcus Aurelius Valerius Massentius
+##### Close to Home: Designed by DG
+
+
+
+
+
+
+
