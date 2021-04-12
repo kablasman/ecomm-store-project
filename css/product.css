@@ -55,10 +55,6 @@ h4 {
     margin-bottom: calc(var(--pad-and-gap)/3);
 }
 
-p {
-    font-size: 1.2em;
-}
-
 hr {
     border-color: var(--lightmocha);
     width: 80%;
@@ -209,6 +205,49 @@ form fieldset:hover ul {
 
 .subheading {
     margin: 1em 0;
+}
+
+.grid-title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.suggested {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: var(--pad-and-gap);
+    padding-top: 0;
+    gap: var(--pad-and-gap);
+}
+
+.child-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-size: 0.55em;
+}
+
+.child-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 0.55em;
+}
+
+.child-3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    font-size: 0.55em;
+}
+
+.child-4 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    font-size: 0.55em;
+}
+
+.child-5 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    font-size: 0.55em;
 }
 
 .submenu {
@@ -420,6 +459,10 @@ form fieldset:hover ul {
         font-size: 1.5em;
     }
 
+    p {
+        font-size: 1.2em;
+    }
+
     button {
         width: 70%;
         border-radius: 2em;
@@ -520,7 +563,7 @@ form fieldset:hover ul {
 }
 
 @media screen and (min-width: 70em) {
-   
+
     div form fieldset {
         grid-row-start: 1;
     }
