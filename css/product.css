@@ -32,8 +32,9 @@ body {
 }
 
 main {
-    padding: calc(var(--pad-and-gap) * 6) 0;
+    padding: calc(var(--pad-and-gap)*6) 0;
     color: var(--black);
+    padding-bottom: calc(var(--pad-and-gap)*3);
 }
 
 h1 {
