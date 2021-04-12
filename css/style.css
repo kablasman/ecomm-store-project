@@ -183,6 +183,30 @@ form fieldset:hover ul {
     padding: 1em;
 }
 
+.social {
+    display: flex;
+    float: right;
+    padding-top: calc(var(--pad-and-gap)*2.5);
+}
+
+.legal {
+    padding-top: calc(var(--pad-and-gap)*2);
+}
+
+.social li  a {
+    text-decoration: none;
+    padding: calc(var(--pad-and-gap)/3);
+}
+
+.legal li a {
+    text-decoration: none;
+    padding-top: var(--pad-and-gap);
+}
+
+.copyright {
+    text-align: center;
+}
+
 .menu {
     display: flex;
     flex-direction: row;
