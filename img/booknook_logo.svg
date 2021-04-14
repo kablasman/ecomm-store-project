@@ -6,9 +6,9 @@
 	.st0{fill:#FFF4DE;}
 	.st1{font-family:'FredokaOne-Regular';}
 	.st2{font-size:48px;}
-	.st3{fill:#FFFBF3;stroke:#FF6686;stroke-width:4;stroke-miterlimit:10;}
-	.st4{fill:#FFFBF3;stroke:#F96EBD;stroke-width:4;stroke-miterlimit:10;}
-	.st5{fill:#FFFBF3;stroke:#F99DE7;stroke-width:4;stroke-miterlimit:10;}
+	.st3{fill:#FFFBF3;stroke:#FF7C48;stroke-width:4;stroke-miterlimit:10;}
+	.st4{fill:#FFFBF3;stroke:#FFB05A;stroke-width:4;stroke-miterlimit:10;}
+	.st5{fill:#FFFBF3;stroke:#FFD766;stroke-width:4;stroke-miterlimit:10;}
 </style>
 <g>
 	<rect class="st0" width="252" height="144"/>
