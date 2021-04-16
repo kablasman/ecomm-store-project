@@ -198,7 +198,6 @@ form fieldset:hover ul {
 .legal {
     font-size: 0.8em;
     justify-content: space-evenly;
-    padding-top: calc(var(--pad-and-gap)*3.5);
     grid-column-start: 2;
     grid-column-end: 3;
 }
@@ -206,9 +205,12 @@ form fieldset:hover ul {
 .contact {
     font-size: 0.8em;
     justify-content: space-evenly;
-    padding-top: calc(var(--pad-and-gap)*3.5);
     grid-column-start: 1;
     grid-column-end: 2;
+}
+
+.footer-resize {
+    font-size: 1.5em;
 }
 
 .social li  a {
