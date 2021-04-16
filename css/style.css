@@ -468,7 +468,7 @@ form fieldset:hover ul {
     .filter-options {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         padding-bottom: var(--pad-and-gap);
         flex-wrap: wrap;
         font-size: 1em;
