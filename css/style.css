@@ -175,7 +175,7 @@ form fieldset:hover ul {
 
 .pages li a {
     text-decoration: none;
-    padding: calc(var(--pad-and-gap)*2);
+    padding:calc(var(--pad-and-gap)/2);
 }
 
 .page-footer {
