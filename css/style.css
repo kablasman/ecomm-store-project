@@ -178,13 +178,6 @@ form fieldset:hover ul {
     padding:calc(var(--pad-and-gap)/2);
 }
 
-.pages li:hover {
-    width: 4%;
-    background-color: var(--green);
-    border-radius: 3em;
-    padding: 0.4em 0;
-}
-
 .page-footer {
     background-color: var(--orange);
     padding: var(--pad-and-gap);
