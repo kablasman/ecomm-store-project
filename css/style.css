@@ -10,11 +10,11 @@
     --darkmocha: #E8CF9E;
     --darker: #C3A579;
     --black: #000;
-    --orange: #F6AF50;
+    --orange: #fcb65c;
     --red: #F5604C;
     --yellow: #FFE555;
     --green: #6DD666;
-    --blue: #8893f5;
+    --blue: #9ba5ff;
     --gold: #F5C51F;
     --greyed-out: #7e7363;
     --font: 'Raleway', sans-serif;
@@ -171,31 +171,56 @@ form fieldset:hover ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-family: var(--logo);
 }
 
 .pages li a {
-    text-decoration: none;
     padding:calc(var(--pad-and-gap)/2);
 }
 
+.pages li:hover {
+    width: 4%;
+    background-color: var(--green);
+    border-radius: 3em;
+    padding: 0.4em 0;
+}
+
 .page-footer {
-    background-color: var(--lightmocha);
-    padding: 1em;
+    background-color: var(--orange);
+    padding: var(--pad-and-gap);
+    padding-top: calc(var(--pad-and-gap)*2);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 130px 130px;
+    padding: var(--pad-and-gap);
 }
 
 .social {
     display: flex;
     float: right;
-    padding-top: calc(var(--pad-and-gap)*2.5);
 }
 
 .legal {
-    padding-top: calc(var(--pad-and-gap)*2);
+    font-size: 0.8em;
+    justify-content: space-evenly;
+    padding-top: calc(var(--pad-and-gap)*3.5);
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.contact {
+    font-size: 0.8em;
+    justify-content: space-evenly;
+    padding-top: calc(var(--pad-and-gap)*3.5);
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 
 .social li  a {
     text-decoration: none;
-    padding: calc(var(--pad-and-gap)/3);
+    padding: calc(var(--pad-and-gap)/1.5);
 }
 
 .legal li a {
@@ -203,8 +228,15 @@ form fieldset:hover ul {
     padding-top: var(--pad-and-gap);
 }
 
+.contact li a {
+    text-decoration: none;
+    padding-top: var(--pad-and-gap);
+}
+
 .copyright {
     text-align: center;
+    font-size: 0.7em;
+    padding-bottom: 0;
 }
 
 .menu {
@@ -341,7 +373,7 @@ form fieldset:hover ul {
 }
 
 .filter-options legend:hover {
-    background-color: var(--orange); 
+    background-color: var(--yellow); 
     border-radius: 1em;
     padding: 0 0.5em;
 }
