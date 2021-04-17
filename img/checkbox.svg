@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="59" viewBox="0 0 60 59">
+  <g id="Group_25" data-name="Group 25" transform="translate(-511 -94)">
+    <g id="Rectangle_13" data-name="Rectangle 13" transform="translate(511 94)" fill="#23d1e4" stroke="#23d1e4" stroke-width="1">
+      <rect width="60" height="59" rx="16" stroke="none"/>
+      <rect x="0.5" y="0.5" width="59" height="58" rx="15.5" fill="none"/>
+    </g>
+    <g id="checkmark" transform="matrix(0.998, 0.07, -0.07, 0.998, 527.708, 113.009)">
+      <line id="Line_1" data-name="Line 1" x2="11.092" y2="7.83" transform="translate(0 10.988)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="6"/>
+      <g id="Group_21" data-name="Group 21" transform="translate(11.092 0)">
+        <line id="Line_2" data-name="Line 2" x1="16.102" y2="18.817" transform="translate(0 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="6"/>
+      </g>
+    </g>
+  </g>
+</svg>

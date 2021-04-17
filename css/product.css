@@ -6,15 +6,16 @@
     --lightmocha: #FFF4DE;
     --mocha:		#faeacc;
     --darkmocha: #E8CF9E;
-    --darker: #C3A579;
+    --darker: #96774a;
     --black: #000;
     --orange: #fcb65c;
+    --darkorange: #ff9419;
     --red: #F5604C;
-    --pink: #fd67a0;
-    --yellow: #FFE555;
+    --yellow: #ffd755;
     --green: #6DD666;
-    --blue: #9ba5ff;
+    --blue: #24d3eb;
     --gold: #F5C51F;
+    --violet: #ecbbff;
     --greyed-out: #7e7363;
     --font: 'Raleway', sans-serif;
     --logo: 'Fredoka One', cursive;
@@ -78,7 +79,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--red);
+    background-color: var(--darkorange);
     color: white;
 }
 
@@ -108,7 +109,7 @@ data del {
 data ins {
     text-decoration: none;
     font-size: 1.3em;
-    color: var(--red);
+    color: var(--darkorange);
 }
 
 dl dt {
@@ -150,15 +151,6 @@ form fieldset:hover ul {
     position: fixed;
     justify-items: center;
 }
-
-/*.heading {
-    font-size: 1.8em;
-    text-align: center;
-    padding: calc(var(--pad-and-gap)*4);
-    margin-top: calc(var(--pad-and-gap)*2);
-    color: var(--lightmocha);
-    text-shadow: 2px 3px black;
-}*/
 
 .navigation {
     width: 80%;
@@ -421,7 +413,7 @@ form fieldset:hover ul {
 }
 
 .submenu li:hover {
-    background-color: var(--green);
+    background-color: var(--violet);
     border-radius: 0.7em;
 }
 
@@ -492,13 +484,17 @@ form fieldset:hover ul {
 }
 
 .my-checkbox > input:checked {
-    background-color: var(--red);
-    border: var(--red);
+    background-image: url(../img/checkbox.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
 }
 
 .my-checkbox > input:hover {
-    background-color: var(--red);
-    border: var(--red);
+    background-image: url(../img/checkbox.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
 }
 
 @media screen and (min-width: 50em) {
