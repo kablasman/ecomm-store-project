@@ -181,7 +181,7 @@ form fieldset:hover ul {
 }
 
 .page-footer {
-    background-image: url(../img/clark-van-der-beken-1KBCgRD8BDc-unsplash.jpg);
+    background-color: var(--darkorange);
     background-size: cover;
     background-repeat: no-repeat;
     padding: var(--pad-and-gap);
