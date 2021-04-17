@@ -192,7 +192,7 @@ form fieldset:hover ul {
 
 .social {
     display: flex;
-    float: right;
+    flex-direction: row;
 }
 
 .legal {
@@ -424,6 +424,13 @@ form fieldset:hover ul {
 .my-checkbox > input:hover {
     background-color: var(--red);
     border: var(--red);
+}
+
+@media screen and (min-width: 28em) {
+    
+    .social {
+        float: right;
+    }
 }
 
 @media screen and (min-width: 45em) {
