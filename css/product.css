@@ -11,6 +11,7 @@
     --orange: #fcb65c;
     --darkorange: #ff9419;
     --red: #F5604C;
+    --pink: #fd67a0;
     --yellow: #ffd755;
     --green: #6DD666;
     --blue: #24d3eb;
@@ -183,7 +184,7 @@ form fieldset:hover ul {
 }
 
 .page-footer {
-    background-color: var(--orange);
+    background-color: var(--darkorange);
     padding: var(--pad-and-gap);
     padding-top: calc(var(--pad-and-gap)*2);
 }
