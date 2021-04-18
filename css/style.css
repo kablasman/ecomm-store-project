@@ -138,9 +138,10 @@ form fieldset:hover ul {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     width: 100%;
     background-color: var(--lightmocha);
-    padding: var(--pad-and-gap);
     position: fixed;
     justify-items: center;
+    padding: var(--pad-and-gap);
+    padding-bottom: 0.2em;
 }
 
 .heading {
@@ -474,6 +475,7 @@ form fieldset:hover ul {
         grid-template-columns: auto 1fr auto auto;
         gap: var(--pad-and-gap);
         justify-items: center;
+        padding: calc(var(--pad-and-gap)/2);
     }
 
     .logo {
@@ -549,13 +551,6 @@ form fieldset:hover ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: var(--pad-and-gap);
-    }
-
-    .page-header {
-        display: grid;
-        grid-template-columns: auto 1fr auto auto;
-        gap: var(--pad-and-gap);
-        justify-items: center;
     }
 
     .find {

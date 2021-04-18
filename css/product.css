@@ -142,9 +142,10 @@ form fieldset:hover ul {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     width: 100%;
     background-color: var(--lightmocha);
-    padding: var(--pad-and-gap);
     position: fixed;
     justify-items: center;
+    padding: var(--pad-and-gap);
+    padding-bottom: 0.2em;
 }
 
 .navigation {
@@ -578,6 +579,7 @@ nav .navigation ul {
         grid-template-columns: auto 1fr auto auto;
         gap: var(--pad-and-gap);
         justify-items: center;
+        padding: calc(var(--pad-and-gap)/2);
     }
 
     .suggested h3 {
@@ -677,13 +679,6 @@ nav .navigation ul {
     .product-2 {
         grid-column-start: 2;
         grid-column-end: 3;
-    }
-
-    .page-header {
-        display: grid;
-        grid-template-columns: auto 1fr auto auto;
-        gap: var(--pad-and-gap);
-        justify-items: center;
     }
 
     .find {
