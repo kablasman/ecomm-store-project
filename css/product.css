@@ -130,12 +130,6 @@ form fieldset:hover ul {
     flex-direction: column;
 }
 
-/*.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--pad-and-gap);
-}*/
-
 .product-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -325,7 +319,7 @@ form fieldset:hover ul {
     font-family: var(--font);
 }
 
-.find {
+/*.find {
     position: relative;
     background-color: var(--darker);
     height: 2em;
@@ -333,7 +327,7 @@ form fieldset:hover ul {
     border-radius: 1em;
     border: none;
     color: black;
-}
+}*/
 
 .search {
     grid-row-start: 1;
@@ -379,7 +373,7 @@ form fieldset:hover ul {
     text-align: center;
 }
 
-.favourites:hover{
+.favourites:hover {
     background-color: var(--pink);
     color: white;
 }
@@ -452,7 +446,7 @@ form fieldset:hover ul {
     display: flex;
 }
 
-.sort {
+/*.sort {
     padding-right: calc(var(--pad-and-gap)/2);
 }
 
@@ -462,7 +456,7 @@ form fieldset:hover ul {
     font: var(--font);
     box-shadow: 1px 1px var(--darker);
     border: none;
-}
+}*/
 
 .my-checkbox {
     display: flex;
@@ -573,12 +567,6 @@ form fieldset:hover ul {
         grid-column-start: 2;
         grid-column-end: 3;
     }
-
-    /*.grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: var(--pad-and-gap);
-    }*/
 
     .page-header {
         display: grid;
