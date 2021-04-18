@@ -38,6 +38,13 @@ Read and complete the steps in the following two documents:
 ##### 72 Hours: Designed by David Wa
 ##### Ice Desert: Designed by Marcus Aurelius Valerius Massentius
 ##### Close to Home: Designed by DG
+#### Test Screenshots
+
+![image](../img/w3-validator.png)
+![image](../img/chrome-lighthouse.png)
+
+
+
 
 
 
