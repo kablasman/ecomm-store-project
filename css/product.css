@@ -147,15 +147,6 @@ form fieldset:hover ul {
     justify-items: center;
 }
 
-/*.navigation {
-    width: 80%;
-    padding-top: 2em;
-    grid-row-start: 3;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 4;
-}*/
-
 .navigation {
     grid-column-start: 5;
     grid-column-end: 6;
@@ -464,18 +455,6 @@ nav .navigation ul {
 .filter-options li:hover {
     display: flex;
 }
-
-/*.sort {
-    padding-right: calc(var(--pad-and-gap)/2);
-}
-
-#sort {
-    background-color: white;
-    border-radius: 0.5em;
-    font: var(--font);
-    box-shadow: 1px 1px var(--darker);
-    border: none;
-}*/
 
 .my-checkbox {
     display: flex;
