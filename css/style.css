@@ -13,11 +13,12 @@
     --orange: #fcb65c;
     --darkorange: #ff9419;
     --red: #F5604C;
+    --pink: #f591a1;
     --yellow: #ffd755;
     --green: #6DD666;
-    --blue: #24d3eb;
+    --blue: #09c0d8;
     --gold: #F5C51F;
-    --violet: #ecbbff;
+    --violet: #ce98e4;
     --greyed-out: #7e7363;
     --font: 'Raleway', sans-serif;
     --logo: 'Fredoka One', cursive;
@@ -321,12 +322,12 @@ form fieldset:hover ul {
     flex-direction: row;
 }
 
-.material-icons {
-    color: var(--black);
+.fav {
+    color: var(--pink);
 }
 
-.fav {
-
+.bag {
+    color: var(--black);
 }
 
 .navigation ul {
@@ -534,10 +535,6 @@ form fieldset:hover ul {
         padding: calc(var(--pad-and-gap)*4.3);
     }
 
-    .material-icons {
-        color: var(--black);
-    }
-
     .filter-options {
         display: flex;
         flex-direction: row;
@@ -594,10 +591,6 @@ form fieldset:hover ul {
     .heading {
         margin: 0;
         padding: calc(var(--pad-and-gap)*6);
-    }
-
-    .material-icons {
-        color: var(--black);
     }
 
     .filter-options {
