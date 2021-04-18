@@ -1,7 +1,7 @@
 /* Note there a few "reset" styles given in reset.css. Review those before you begin */
 
 /* index.html */
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
 :root {
@@ -21,7 +21,7 @@
     --violet: #ce98e4;
     --greyed-out: #7e7363;
     --font: 'DM Sans', sans-serif;
-    --logo: 'Fredoka One', cursive;
+    --logo: 'Hepta Slab', serif;
     --pad-and-gap: 1em;
 }
 
