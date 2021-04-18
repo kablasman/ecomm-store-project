@@ -1,6 +1,6 @@
 /* product.html */
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Fredoka+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
 :root {
     --lightmocha: #FFF4DE;
@@ -18,7 +18,7 @@
     --gold: #F5C51F;
     --violet: #ce98e4;
     --greyed-out: #7e7363;
-    --font: 'Raleway', sans-serif;
+    --font: 'DM Sans', sans-serif;
     --logo: 'Fredoka One', cursive;
     --pad-and-gap: 1em;
 }
@@ -199,7 +199,7 @@ form fieldset:hover ul {
 
 .social {
     display: flex;
-    float: right;
+    flex-direction: row;
 }
 
 .legal {
@@ -510,6 +510,13 @@ nav .navigation ul {
     background-repeat: no-repeat;
     background-size: cover;
     border: none;
+}
+
+@media screen and (min-width: 28em) {
+    
+    .social {
+        float: right;
+    }
 }
 
 @media screen and (min-width: 40em) {
