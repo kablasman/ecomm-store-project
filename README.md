@@ -40,8 +40,8 @@ Read and complete the steps in the following two documents:
 ##### Close to Home: Designed by DG
 #### Test Screenshots
 
-![image](../img/w3-validator.png)
-![image](../img/chrome-lighthouse.png)
+<img src="img/w3-validator.png"/>
+<img src="img/chrome-lighthouse.png"/>
 
 
 
