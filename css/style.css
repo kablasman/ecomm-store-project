@@ -329,6 +329,18 @@ form fieldset:hover ul {
     color: var(--black);
 }
 
+.cart {
+    width: 2.1em;
+}
+
+.cart a {
+    text-decoration: none;
+}
+
+.cart span {
+    font-size: 0.8em;
+}
+
 .navigation ul {
     display: none;
     justify-content: space-evenly;
