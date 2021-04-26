@@ -395,23 +395,12 @@ form fieldset:hover ul {
     flex-wrap: wrap;
 }
 
-.filter-list {
-    display: flex;
-}
-
-.filter-options legend:hover {
-    background-color: var(--yellow); 
-    border-radius: 1em;
-    padding: 0 0.5em;
-}
+/*.filter-options legend:hover {
+}*/
  
-.filter-options li {
+/*.filter-options li {
     display: none;
-}
-
-.filter-options li:hover {
-    display: flex;
-}
+}*/
 
 .sort {
     padding-right: calc(var(--pad-and-gap)/2);
@@ -457,6 +446,18 @@ form fieldset:hover ul {
     background-repeat: no-repeat;
     background-size: cover;
     border: none;
+}
+
+.filter-options a {
+    text-decoration: none;
+}
+
+.filter-list {
+    display: none;
+}
+
+.filter-list.open {
+    display: block;
 }
 
 @media screen and (min-width: 28em) {
