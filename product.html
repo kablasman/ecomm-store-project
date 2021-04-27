@@ -51,12 +51,14 @@
         <main class="products">
             <article class="product">
                 <header class="product-container">
-                    <div class="product-1">
-                        <a href="product.html"><img src="img/action-thriller-book-cover-design-template-3675ae3e3ac7ee095fc793ab61b812cc_screen.jpg" alt="book image" width="93.8%"></a>
-                    </div>
-                    <div class="product-2">
-                        <a href="product.html"><img src="img/unsplash_photoshoppedimg.png" alt="author image" width="100%"></a>
-                    </div>
+                    <figure class="gallery" id="gallery">
+                        <img src="img/action-thriller-book-cover-design-template-3675ae3e3ac7ee095fc793ab61b812cc_screen.jpg" alt="book image" id="img1" class="gallery-img active" width="100%"></a>
+                        <img src="img/unsplash_photoshoppedimg.png" alt="author image" id="img2" class="gallery-img" width="100%"></a>
+                        <ol class="gallery-controls" id="controls">
+                            <li><button class="gallery-button active" aria-controls="img1" aria-label="Image 1"></button></li>
+                            <li><button class="gallery-button" aria-controls="img2" aria-label="Image 2"></button></li>
+                        </ol>
+                    </figure>
                 </header>
                 <div class="product-info">
                     <h3>The King of Drugs</h3>
@@ -265,6 +267,7 @@
               </nav>
             </div>
             <p class="copyright">&copy; Copyright, 2021.</p>
-          </footer>
+        </footer>
+        <script src="product.js"></script>
     </body>
 </html>
