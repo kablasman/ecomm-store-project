@@ -21,6 +21,7 @@ Read and complete the steps in the following two documents:
 
 #### Search Bar: https://www.youtube.com/watch?v=v1PeTDrw6OY
 #### Shopping Cart: https://www.youtube.com/watch?v=PoTGs38DR9E
+#### Dropdown Toggle Menu: https://www.youtube.com/watch?v=bdft2MZEqJY
 #### Book Covers: https://www.postermywall.com/index.php/sizes/book-cover-template#
 
 ##### The King of Drugs: Designed by David Watson
