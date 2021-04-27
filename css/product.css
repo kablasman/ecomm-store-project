@@ -51,6 +51,7 @@ h2 {
 h3 {
     text-transform: uppercase;
     margin-bottom: calc(var(--pad-and-gap)/2);
+    margin-top: 0;
 }
 
 h4 {
@@ -130,11 +131,48 @@ form fieldset:hover ul {
     flex-direction: column;
 }
 
-.product-container {
+/*.product-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--pad-and-gap);
     padding-top: calc(var(--pad-and-gap)*2);
+}*/
+
+.gallery  {
+    margin: 6em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.gallery-img {
+    display: none;
+}
+
+.gallery-img.active {
+    display: block;
+}
+
+.gallery-button {
+    background-color: transparent;
+    margin: 1em 0.4em;
+    height: 0.1em;
+    font-size: 0.7em;
+    border: 0.1rem solid var(--darker);
+    border-radius: 50%;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.gallery-button.active {
+    background-color: var(--darkorange);
+}
+
+.gallery-controls {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    list-style: none;
+	bottom: 0;
 }
 
 .page-header {
@@ -156,7 +194,7 @@ form fieldset:hover ul {
 }
 
 .product {
-    margin: 2em 5em;
+    margin: 4em 1em;
     margin-bottom: 0;
     text-align: center;
 }
@@ -525,7 +563,7 @@ nav .navigation ul {
         font-size: 1.2em;
     }
 
-    button {
+    footer button {
         width: 70%;
         border-radius: 2em;
         background-color: white;
@@ -558,13 +596,13 @@ nav .navigation ul {
         font-size: 1.3em;
     }
 
-    .product-container {
+    /*.product-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: var(--pad-and-gap);
-    }
+    }*/
     
-    .product-1 {
+    /*.product-1 {
         grid-column-start: 1;
         grid-column-end: 2;
     }
@@ -572,6 +610,16 @@ nav .navigation ul {
     .product-2 {
         grid-column-start: 2;
         grid-column-end: 3;
+    }*/
+
+    .gallery {
+        margin: 6em;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .gallery-button {
+        font-size: 0.9em;
     }
 
     .page-header {
@@ -653,6 +701,15 @@ nav .navigation ul {
     }
 }
 
+@media screen and (min-width: 50em) {
+   
+    .gallery {
+        margin: 11em;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
 @media screen and (min-width: 70em) {
 
     div form fieldset {
@@ -679,6 +736,12 @@ nav .navigation ul {
     .product-2 {
         grid-column-start: 2;
         grid-column-end: 3;
+    }
+
+    .gallery {
+        margin: 6em;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     .find {
