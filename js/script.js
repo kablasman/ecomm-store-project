@@ -71,7 +71,7 @@ console.table(products);
 //rebuild products in js assigning list elements, text content and images
 //rebuild article not list item
 //remove products from html after put in js
-//appendChild at end
+//appendChild at end ------------------------------------
 
 let productTable = document.querySelector('.grid-container')
 
@@ -134,7 +134,12 @@ products.forEach((book) => {
     console.log(`${book.bookTitle} ${book.bookAuthor}: ${book.bookPrice} ${book.bookRating}`)
 });
 
-// update shopping bag
+// filter with radio buttons ------------------------------
+
+
+
+// update shopping bag ---------------------------------
+
 let cart = document.querySelectorAll('.add-cart');
 
 for (let i = 0; i < products.length; i++) {
