@@ -134,6 +134,13 @@ products.forEach((book) => {
     console.log(`${book.bookTitle} ${book.bookAuthor}: ${book.bookPrice} ${book.bookRating}`)
 });
 
+// dropdown menu toggle -----------------------------------
+document.querySelector('.menu-toggle').addEventListener('click', openMenu);
+
+function openMenu() {
+    document.querySelector('.menu').classList.toggle("active");
+}
+
 // filter with radio buttons ------------------------------
 
 

@@ -268,21 +268,6 @@ form fieldset:hover ul {
     margin: 1em 0;
 }
 
-.submenu {
-    background-color: var(--lightmocha);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 0;
-    padding-left: 0;
-    padding-top: var(--pad-and-gap);
-    width: 10em;
-    height: 10em;
-    border-radius: 0.8em;
-    font-family: var(--font);
-}
-
 .find {
     position: relative;
     background-color: var(--darker);
@@ -351,6 +336,28 @@ form fieldset:hover ul {
     padding-top: calc(var(--pad-and-gap)/1.5);
 }
 
+.menu.active {
+    padding-top: calc(var(--pad-and-gap)*1.5);
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background-color: var(--lightmocha);
+    border-radius: 1em;
+    right: 0;
+    align-items: center;
+}
+
+.menu.active li:hover {
+    background-color: var(--violet);
+    border-radius: 2em;
+}
+
+.menu.active li {
+    padding: calc(var(--pad-and-gap)/8) var(--pad-and-gap);
+    margin: calc(var(--pad-and-gap)/2);
+    text-align: center;
+}
+
 .menu li ul {
     display: none;
 }
@@ -364,19 +371,12 @@ form fieldset:hover ul {
     color: black;
 }
 
-.submenu li {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    justify-content: left;
-    padding-left: calc(var(--pad-and-gap)/2);
-    align-items: center;
+.submenu {
+    display: none;
 }
 
-.submenu li:hover {
-    background-color: var(--violet);
-    border-radius: 0.7em;
+.submenu li {
+    display: none;
 }
 
 /*.find:hover {
@@ -541,6 +541,40 @@ form fieldset:hover ul {
 
     .menu-toggle {
         display: none;
+    }
+
+    .menu.active {
+        display: none;
+    }
+
+    .submenu {
+        background-color: var(--lightmocha);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 0;
+        padding-left: 0;
+        padding-top: var(--pad-and-gap);
+        width: 10em;
+        height: 10em;
+        border-radius: 0.8em;
+        font-family: var(--font);
+    }
+
+    .submenu li {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        justify-content: left;
+        padding-left: calc(var(--pad-and-gap)/2);
+        align-items: center;
+    }
+
+    .submenu li:hover {
+        background-color: var(--violet);
+        border-radius: 0.7em;
     }
 
     .heading {
