@@ -10,15 +10,16 @@
     --darkmocha: #E8CF9E;
     --darker: #96774a;
     --black: #000;
-    --orange: #fcb65c;
+    --orange: #ffa339;
     --darkorange: #ff9419;
     --red: #F5604C;
-    --pink: #f591a1;
-    --yellow: #ffd755;
+    --pink: #f599a8;
+    --beige: #cea97a;
+    --yellow: #ffc247;
     --green: #6DD666;
-    --blue: #09c0d8;
+    --blue: #51e5f8;
     --gold: #F5C51F;
-    --violet: #ce98e4;
+    --violet: #e0b7f0;
     --greyed-out: #7e7363;
     --font: 'DM Sans', sans-serif;
     --logo: 'Hepta Slab', serif;
@@ -150,7 +151,7 @@ form fieldset:hover ul {
     background-image: url(../img/clark-van-der-beken-1KBCgRD8BDc-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: calc(var(--pad-and-gap)*4);
+    padding: calc(var(--pad-and-gap)*4) 0;
     color: white;
     text-shadow: 2px 3px black;
 }
@@ -206,8 +207,12 @@ form fieldset:hover ul {
     flex-direction: row;
 }
 
+.social {
+    display: flex;
+    flex-direction: row;
+}
+
 .legal {
-    font-size: 0.8em;
     justify-content: space-evenly;
     grid-column-start: 2;
     grid-column-end: 3;
@@ -215,7 +220,6 @@ form fieldset:hover ul {
 }
 
 .contact {
-    font-size: 0.8em;
     justify-content: space-evenly;
     grid-column-start: 1;
     grid-column-end: 2;
@@ -224,7 +228,7 @@ form fieldset:hover ul {
 
 .footer-resize {
     padding-top: var(--pad-and-gap);
-    font-size: 1em;
+    font-size: 1.4em;
 }
 
 .social li  a {
@@ -254,10 +258,14 @@ form fieldset:hover ul {
     justify-content: space-around;
     flex-wrap: wrap;
     font-family: var(--font);
+    max-width: 40em;
+    margin: auto;
 }
 
 .filters {
     padding: 0 var(--pad-and-gap);
+    max-width: 80em;
+    overflow-wrap: ;
 }
 
 .results {
@@ -393,6 +401,47 @@ form fieldset:hover ul {
     justify-content: space-between;
     padding-bottom: var(--pad-and-gap);
     flex-wrap: wrap;
+    max-width: 100em;
+}
+
+.filter-options fieldset {
+    padding: calc(var(--pad-and-gap)/2);
+}
+
+.fiction {
+    background-color: var(--blue);
+    padding: 0 calc(var(--pad-and-gap)/2);
+    border-radius: 1em;
+}
+
+.non-fiction {
+    background-color: var(--violet);
+    padding: 0 calc(var(--pad-and-gap)/2);
+    border-radius: 1em;
+}
+
+.wellness {
+    background-color: var(--pink);
+    padding: 0 calc(var(--pad-and-gap)/2);
+    border-radius: 1em;
+}
+
+.teens {
+    background-color: var(--orange);
+    padding: 0 calc(var(--pad-and-gap)/2);
+    border-radius: 1em;
+}
+
+.kids {
+    background-color: var(--yellow);
+    padding: 0 calc(var(--pad-and-gap)/2);
+    border-radius: 1em;
+}
+
+.popularity {
+    background-color: var(--beige);
+    padding: 0 calc(var(--pad-and-gap)/2);
+    border-radius: 1em;
 }
 
 /*.filter-options legend:hover {
@@ -480,7 +529,11 @@ form fieldset:hover ul {
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: var(--pad-and-gap);
+        gap: calc(var(--pad-and-gap)*1.5);
+        justify-self: center;
+        justify-content: center;
+        max-width: 100em;
+        margin: auto;
     }
 
     .page-header {
