@@ -508,6 +508,8 @@ nav .navigation ul {
     padding-bottom: var(--pad-and-gap);
     flex-wrap: wrap;
     max-width: 100em;
+    color: var(--lightmocha);
+    font-size: 1.3em;
 }
 
 .filter-options fieldset {
@@ -770,7 +772,6 @@ nav .navigation ul {
         justify-content: space-between;
         padding-bottom: var(--pad-and-gap);
         flex-wrap: wrap;
-        font-size: 1em;
     }
 }
 
@@ -835,6 +836,7 @@ nav .navigation ul {
         grid-row-end: 1;
         grid-column-start: 2;
         grid-column-end: 3;
+        padding-top: calc(var(--pad-and-gap)*1.5);
     }
 
     .heading {
@@ -896,6 +898,9 @@ nav .navigation ul {
         justify-content: space-between;
         padding-bottom: var(--pad-and-gap);
         flex-wrap: wrap;
+    }
+
+    .menu {
         font-size: 1.2em;
     }
 }
