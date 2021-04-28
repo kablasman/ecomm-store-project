@@ -61,6 +61,10 @@ h4 {
     margin-bottom: calc(var(--pad-and-gap)/3);
 }
 
+header label img {
+    padding-top: var(--pad-and-gap);
+}
+
 nav ul li ul {
     position: absolute;
 }
@@ -155,6 +159,12 @@ form fieldset:hover ul {
     color: white;
     text-shadow: 2px 3px black;
 }
+
+/*.product h3 {
+    background-color: var(--blue);
+    border-radius: 1em;
+    padding: 0 calc(var(--pad-and-gap)/2);
+}*/
 
 /*.navigation {
     width: 80%;
@@ -265,7 +275,6 @@ form fieldset:hover ul {
 .filters {
     padding: 0 var(--pad-and-gap);
     max-width: 80em;
-    overflow-wrap: ;
 }
 
 .results {
@@ -402,6 +411,7 @@ form fieldset:hover ul {
     padding-bottom: var(--pad-and-gap);
     flex-wrap: wrap;
     max-width: 100em;
+    color: var(--lightmocha);
 }
 
 .filter-options fieldset {

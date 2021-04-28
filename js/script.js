@@ -5,7 +5,8 @@ let products = [
         bookPrice: 13.72,
         bookRating: 3.5,
         bookImage: 'action-thriller-book-cover-design-template-3675ae3e3ac7ee095fc793ab61b812cc_screen.jpg',
-        bookLabel: 'label.svg'
+        bookLabel: 'label.svg',
+        bookCategory: 'fiction-label.svg'
     },
     {
         bookTitle: 'Sunset',
@@ -13,6 +14,7 @@ let products = [
         bookPrice: 14.99,
         bookRating: 4.0,
         bookImage: 'kindle-design-template-4848bc9c78148b167c616f139fd60fc1_screen.jpg',
+        bookCategory: 'non-fiction-label.svg'
     },
     {
         bookTitle: 'Left Alone',
@@ -20,6 +22,7 @@ let products = [
         bookPrice: 22.41,
         bookRating: 4.5,
         bookImage: 'intriguing-thriller-book-cover-design-template-3d1c88f0ad32678f487a32f8c778c3b1_screen.jpg',
+        bookCategory: 'teens-label.svg'
     },
     {
         bookTitle: 'A New Vision to Success',
@@ -27,6 +30,7 @@ let products = [
         bookPrice: 18.25,
         bookRating: 3.0,
         bookImage: 'marketing-guide-self-help-book-cover-design-template-9a262d1a28d5ca87f62d7d13186f2731_screen.jpg',
+        bookCategory: 'non-fiction-label.svg'
     },
     {
         bookTitle: 'The Baking Cookbook',
@@ -34,6 +38,7 @@ let products = [
         bookPrice: 12.45,
         bookRating: 4.5,
         bookImage: 'pink-cookbook-cover-design-template-14f54349a65197b03463d9bcca9aae15_screen.jpg',
+        bookCategory: 'wellness-label.svg'
     },
     {
         bookTitle: 'Rise Above Wilderness',
@@ -41,6 +46,7 @@ let products = [
         bookPrice: 14.99,
         bookRating: 1.5,
         bookImage: 'motivational-self-help-book-cover-design-template-549362a7c9d568279e866eb81510239c_screen.jpg',
+        bookCategory: 'non-fiction-label.svg'
     },
     {
         bookTitle: 'The Night Profecy',
@@ -48,6 +54,7 @@ let products = [
         bookPrice: 24.99,
         bookRating: 5.0,
         bookImage: 'fantasy-night-book-cover-design-template-035f9a97865bb03cabe1b1cca3871543_screen.jpg',
+        bookCategory: 'fiction-label.svg'
     },
     {
         bookTitle: 'Secret Recipes',
@@ -55,6 +62,7 @@ let products = [
         bookPrice: 15.52,
         bookRating: 4.5,
         bookImage: 'cookbook-cover-template-design-20457a93aa7f163c4975e96713a90a33_screen.jpg',
+        bookCategory: 'wellness-label.svg'
     },
     {
         bookTitle: 'Drawn to the Sky',
@@ -62,6 +70,7 @@ let products = [
         bookPrice: 25.43,
         bookRating: 3.0,
         bookImage: 'night-drawing-black-book-cover-design-template-ea74bc762820a4c4a426e4df9f3897ef_screen.jpg',
+        bookCategory: 'popularity-label.svg'
     }
 
 ];
@@ -81,6 +90,7 @@ products.forEach((product) => {
     oneProduct.innerHTML = `
     <header>
         <a href="product.html"><img src="img/${product.bookImage}" alt="${product.bookTitle}"></a>
+        <label><img src="img/${product.bookCategory}" alt="${product.bookCategory}"></label>
         <h3>${product.bookTitle}</h3>
         <h4>by ${product.bookAuthor}</h4>
         <img src="img/label.svg" alt="label classifying new item" width="75">
