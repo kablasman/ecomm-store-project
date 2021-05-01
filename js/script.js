@@ -2,6 +2,7 @@ let products = [
     {
         bookTitle: 'The King of Drugs',
         bookAuthor: 'Nora Barrett',
+        oldPrice: 27.74,
         bookPrice: 13.72,
         bookRating: 3.5,
         bookImage: 'action-thriller-book-cover-design-template-3675ae3e3ac7ee095fc793ab61b812cc_screen.jpg',
@@ -11,73 +12,91 @@ let products = [
     {
         bookTitle: 'Sunset',
         bookAuthor: 'Robert Peeter',
+        oldPrice: 21.99,
         bookPrice: 14.99,
         bookRating: 4.0,
         bookImage: 'kindle-design-template-4848bc9c78148b167c616f139fd60fc1_screen.jpg',
+        bookLabel: 'hot-label.svg',
         bookCategory: 'non-fiction-label.svg'
     },
     {
         bookTitle: 'Left Alone',
         bookAuthor: 'Michael Brown',
+        oldPrice: 26.79,
         bookPrice: 22.41,
         bookRating: 4.5,
         bookImage: 'intriguing-thriller-book-cover-design-template-3d1c88f0ad32678f487a32f8c778c3b1_screen.jpg',
+        bookLabel: 'hot-label.svg',
         bookCategory: 'teens-label.svg'
     },
     {
         bookTitle: 'A New Vision to Success',
         bookAuthor: 'David Markson',
+        oldPrice: 21.49,
         bookPrice: 18.25,
         bookRating: 3.0,
         bookImage: 'marketing-guide-self-help-book-cover-design-template-9a262d1a28d5ca87f62d7d13186f2731_screen.jpg',
+        bookLabel: 'label.svg',
         bookCategory: 'non-fiction-label.svg'
     },
     {
         bookTitle: 'The Baking Cookbook',
         bookAuthor: 'Martha Rendenson',
+        oldPrice: 19.89,
         bookPrice: 12.45,
         bookRating: 4.5,
         bookImage: 'pink-cookbook-cover-design-template-14f54349a65197b03463d9bcca9aae15_screen.jpg',
+        bookLabel: 'label.svg',
         bookCategory: 'wellness-label.svg'
     },
     {
         bookTitle: 'Rise Above Wilderness',
-        bookAuthor: 'Doe Brooks',
+        bookAuthor: 'Kenneth Smith',
+        oldPrice: 25.99,
         bookPrice: 14.99,
         bookRating: 1.5,
         bookImage: 'motivational-self-help-book-cover-design-template-549362a7c9d568279e866eb81510239c_screen.jpg',
+        bookLabel: 'label.svg',
         bookCategory: 'non-fiction-label.svg'
     },
     {
         bookTitle: 'The Night Profecy',
         bookAuthor: 'Mara Franzis',
-        bookPrice: 24.99,
+        oldPrice: 24.99,
+        bookPrice: 17.99,
         bookRating: 5.0,
         bookImage: 'fantasy-night-book-cover-design-template-035f9a97865bb03cabe1b1cca3871543_screen.jpg',
+        bookLabel: 'label.svg',
         bookCategory: 'fiction-label.svg'
     },
     {
         bookTitle: 'Secret Recipes',
         bookAuthor: 'Ken Adams',
-        bookPrice: 15.52,
+        oldPrice:  19.26,
+        bookPrice: 9.63,
         bookRating: 4.5,
         bookImage: 'cookbook-cover-template-design-20457a93aa7f163c4975e96713a90a33_screen.jpg',
+        bookLabel: 'hot-label.svg',
         bookCategory: 'wellness-label.svg'
     },
     {
         bookTitle: 'Drawn to the Sky',
         bookAuthor: 'Ken Adams',
-        bookPrice: 25.43,
+        oldPrice: 25.43,
+        bookPrice: 14.89,
         bookRating: 3.0,
         bookImage: 'night-drawing-black-book-cover-design-template-ea74bc762820a4c4a426e4df9f3897ef_screen.jpg',
+        bookLabel: 'hot-label.svg',
         bookCategory: 'popularity-label.svg'
     },
     {
         bookTitle: 'Ensaladas',
         bookAuthor: 'Silvia Bechamel',
-        bookPrice: 18.45,
+        oldPrice: 25.43,
+        bookPrice: 12.56,
         bookRating: 3.5,
         bookImage: 'caratula-de-libro-de-recetas-de-ensaladas-design-template-5734d23e3c3900de9fd394218b419e97_screen.jpeg',
+        bookLabel: 'hot-label.svg',
         bookCategory: 'wellness-label.svg'
     }
 
@@ -101,8 +120,8 @@ products.forEach((product) => {
         <div class="book-label"><img src="img/${product.bookCategory}" alt="${product.bookCategory}" width="80%"></div>
         <h3>${product.bookTitle}</h3>
         <h4>by ${product.bookAuthor}</h4>
-        <img src="img/label.svg" alt="label classifying new item" width="65">
-        <data value="39"><del>$18.99</del> <ins>$${product.bookPrice}</ins></data>
+        <img src="img/${product.bookLabel}" alt="label classifying new item" width="65">
+        <data value="39"><del>$${product.oldPrice}</del> <ins>$${product.bookPrice}</ins></data>
         <dl>
         <dt>Rating</dt>
         <dd>${product.bookRating} <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span><span class="material-icons">star_border</span></dd>
@@ -174,8 +193,8 @@ const setProductToTable = function(products) {
             <div class="book-label"><img src="img/${product.bookCategory}" alt="${product.bookCategory}" width="80%"></div>
             <h3>${product.bookTitle}</h3>
             <h4>by ${product.bookAuthor}</h4>
-            <img src="img/label.svg" alt="label classifying new item" width="65">
-            <data value="39"><del>$18.99</del> <ins>$${product.bookPrice}</ins></data>
+            <img src="img/${product.bookLabel}" alt="label for item" width="70">
+            <data value="39"><del>$${product.oldPrice}</del> <ins>$${product.bookPrice}</ins></data>
             <dl>
             <dt>Rating</dt>
             <dd>${product.bookRating} <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span><span class="material-icons">star_border</span></dd>
