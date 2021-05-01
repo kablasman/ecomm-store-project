@@ -395,6 +395,22 @@ form fieldset:hover ul {
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 2;
+    padding-top: calc(var(--pad-and-gap)/4);
+}
+
+#filterResults {
+    width: 4em;
+    height: 2em;
+    border-radius: 4em;
+    border: 1px solid black;
+    background-image: url(../img/search_bar.svg);
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-color: var(--lightmocha);
+}
+
+#filterResults:hover {
+    background-image: none;
 }
 
 .logo {
@@ -556,6 +572,10 @@ nav .navigation ul {
     border-radius: 1em;
 }
 
+.book-label {
+    padding-top: var(--pad-and-gap);
+}
+
 .filter-list {
     display: flex;
 }
@@ -710,7 +730,7 @@ nav .navigation ul {
     }
 
     .suggested h3 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .logo {
@@ -732,7 +752,7 @@ nav .navigation ul {
         grid-row-end: 1;
         grid-column-start: 3;
         grid-column-end: 4;
-        padding-top: calc(var(--pad-and-gap)*1.1);
+        padding-top: calc(var(--pad-and-gap)*1.8);
         width: 4em;
     }
 
@@ -836,11 +856,12 @@ nav .navigation ul {
     }
 
     .navigation {
+        width: 80%;
+        padding-top: calc(var(--pad-and-gap)*1.65);
         grid-row-start: 1;
         grid-row-end: 1;
         grid-column-start: 2;
         grid-column-end: 3;
-        padding-top: calc(var(--pad-and-gap)*1.65);
     }
 
     .heading {
