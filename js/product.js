@@ -68,7 +68,7 @@ let products = [
 ];
 
 // gallery ----------------------------------------------
-
+// adds a click event for gallery button that sets image to active
 const allButtons = document.querySelector('#controls');
 
 allButtons.addEventListener('click', function(event) {

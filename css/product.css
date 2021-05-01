@@ -69,6 +69,10 @@ nav ul li ul {
     position: absolute;
 }
 
+div .product-info-1 {
+    margin-top: 0;
+}
+
 button {
     border-radius: 2em;
     background-color: white;
@@ -836,7 +840,7 @@ nav .navigation ul {
         grid-row-end: 1;
         grid-column-start: 2;
         grid-column-end: 3;
-        padding-top: calc(var(--pad-and-gap)*1.5);
+        padding-top: calc(var(--pad-and-gap)*1.65);
     }
 
     .heading {
