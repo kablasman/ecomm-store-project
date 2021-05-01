@@ -16,7 +16,11 @@ Read and complete the steps in the following two documents:
 - The live url must be added to appropriate field of the repository's "About" (top-right)
 - Both urls (code, and live) will be collected prior to the first deliverable being due
 - See the [project overview](https://www.notion.so/juneate/Project-Webstore-28443f753b344d60b0176a24e14f17c9) for details on submissions, as well as a form
+### Introduction
 
+This website is an e-commerce website for books. There are 6 main JavaScript features, including: an array of 10 books, a method of adding the book array to the UI, a toggle menu for the smallest viewport, a search bar that filters and searches books by author and title, an image gallery on the product page and a cart tracker.
+
+Happy shopping! Don't shop too hard!
 ### References
 
 #### Search Bar: https://www.youtube.com/watch?v=v1PeTDrw6OY
@@ -41,7 +45,7 @@ Read and complete the steps in the following two documents:
 ##### 72 Hours: Designed by David Wa
 ##### Ice Desert: Designed by Marcus Aurelius Valerius Massentius
 ##### Close to Home: Designed by DG
-#### Test Screenshots
+### Test Screenshots
 
 <img src="img/w3-validator.png"/>
 <img src="img/chrome-lighthouse.png"/>
