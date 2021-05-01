@@ -93,7 +93,7 @@ products.forEach((product) => {
         <div class="book-label"><img src="img/${product.bookCategory}" alt="${product.bookCategory}" width="80%"></div>
         <h3>${product.bookTitle}</h3>
         <h4>by ${product.bookAuthor}</h4>
-        <img src="img/label.svg" alt="label classifying new item" width="75">
+        <img src="img/label.svg" alt="label classifying new item" width="65">
         <data value="39"><del>$18.99</del> <ins>$${product.bookPrice}</ins></data>
         <dl>
         <dt>Rating</dt>
@@ -133,13 +133,6 @@ productTable.appendChild(oneProduct);
 
 });
 
-//replace function with arrow as shortcut
-/*let printProduct = ((book) => {
-    console.log(`${book.bookTitle} ${book.bookAuthor}: ${book.bookPrice} ${book.bookRating}`);
-})
-
-products.forEach(printProduct)*/
-
 products.forEach((book) => { 
     console.log(`${book.bookTitle} ${book.bookAuthor}: ${book.bookPrice} ${book.bookRating}`)
 });
@@ -151,8 +144,91 @@ function openMenu() {
     document.querySelector('.menu').classList.toggle("active");
 }
 
-// filter with radio buttons ------------------------------
-// filters duplicate data, can print duplicate array
+// search filter  ------------------------------------------
+// referencing product array to search from 
+const searchFilter = {
+    query: ''
+}
+
+let filterResults = document.getElementById('filterResults')
+
+const setProductToTable = function(products) {
+    productTable.innerHTML = ''
+    products.forEach((product) => {
+        let articleItem = document.createElement('article')
+
+        articleItem.classList.add('product')
+        articleItem.innerHTML = `
+        <header>
+            <a href="product.html"><img src="img/${product.bookImage}" alt="${product.bookTitle}"></a>
+            <div class="book-label"><img src="img/${product.bookCategory}" alt="${product.bookCategory}" width="80%"></div>
+            <h3>${product.bookTitle}</h3>
+            <h4>by ${product.bookAuthor}</h4>
+            <img src="img/label.svg" alt="label classifying new item" width="65">
+            <data value="39"><del>$18.99</del> <ins>$${product.bookPrice}</ins></data>
+            <dl>
+            <dt>Rating</dt>
+            <dd>${product.bookRating} <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span><span class="material-icons">star_border</span></dd>
+            </dl>
+        </header>
+        <form>
+            <fieldset>
+            <legend>Type</legend>
+            <ul>
+                <li>
+                <label class="my-checkbox">
+                    <input type="checkbox"/> 
+                    <span>Hardcover</span>
+                </label>
+                </li>
+                <li>
+                <label class="my-checkbox">
+                    <input type="checkbox"/> 
+                    <span>Paperback</span>
+                </label>
+                </li>
+                <li>
+                <label class="my-checkbox">
+                    <input type="checkbox"/> 
+                    <span>eBook</span>
+                </label>
+                </li>
+            </ul>
+            </fieldset>
+        </form>
+        <footer>
+            <button type="button" class="add-cart"><span class="material-icons"></span>Add to Cart</button>
+        </footer>
+        `
+        productTable.appendChild(articleItem)
+    });
+
+}
+
+// filter through products array and pull values to search for
+const filterAndSort = function(){
+    let filteredProducts = products.filter(function(product){
+        let titleSearch = product.bookTitle.toUpperCase()
+        let authorSearch = product.bookAuthor.toUpperCase()
+
+        return (titleSearch.includes(searchFilter.query) || authorSearch.includes(searchFilter.query))
+    })
+
+    // assign filtered product results to UI
+    setProductToTable(filteredProducts);
+}
+
+// search through array
+filterResults.addEventListener('input', function(event) {
+    searchFilter.query = event.target.value.toUpperCase()
+
+    filterAndSort();
+})
+
+// rebuild UI with all products in array
+setProductToTable(products);
+
+
 
 
 // update shopping bag ---------------------------------
