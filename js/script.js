@@ -90,7 +90,7 @@ products.forEach((product) => {
     oneProduct.innerHTML = `
     <header>
         <a href="product.html"><img src="img/${product.bookImage}" alt="${product.bookTitle}"></a>
-        <label><img src="img/${product.bookCategory}" alt="${product.bookCategory}"></label>
+        <div class="book-label"><img src="img/${product.bookCategory}" alt="${product.bookCategory}" width="80%"></div>
         <h3>${product.bookTitle}</h3>
         <h4>by ${product.bookAuthor}</h4>
         <img src="img/label.svg" alt="label classifying new item" width="75">
@@ -152,17 +152,19 @@ function openMenu() {
 }
 
 // filter with radio buttons ------------------------------
-
+// filters duplicate data, can print duplicate array
 
 
 // update shopping bag ---------------------------------
 
 let cart = document.querySelectorAll('.add-cart');
 
+// for all products
 for (let i = 0; i < products.length; i++) {
     console.log(i, products[i]);
 }
 
+// add a click event when Add to Cart button is pressed
 for(let i = 0; i < cart.length; i++) {
     cart[i].addEventListener('click', () => {
         console.log("Added to cart");
@@ -170,6 +172,7 @@ for(let i = 0; i < cart.length; i++) {
     })
 }
 
+// access local storage to store cart/bag value
 function updateCart() {
     let cartItems = localStorage.getItem('addedToCart');
 
@@ -178,6 +181,7 @@ function updateCart() {
     }
 }
 
+// update physical cart value (text) to number of clicks and store this value in local storage
 function addedToCart() {
     let cartItems = localStorage.getItem('addedToCart');
     cartItems = parseInt(cartItems);
