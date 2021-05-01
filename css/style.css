@@ -284,15 +284,15 @@ form fieldset legend {
 }
 
 #filterResults {
-    width: 4em;
+    width: 5em;
     height: 2em;
     border-radius: 4em;
     border: 1px solid black;
     background-image: url(../img/search_bar.svg);
     background-repeat: no-repeat;
-    background-size: 55%;
+    background-size: 43%;
     background-color: var(--lightmocha);
-    padding-left: calc(var(--pad-and-gap)*1.5);
+    padding-left: calc(var(--pad-and-gap)*2);
 }
 
 #filterResults:hover {

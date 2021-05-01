@@ -379,21 +379,6 @@ form fieldset legend {
     padding-bottom: var(--pad-and-gap);
 }
 
-.submenu {
-    background-color: var(--lightmocha);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 0;
-    padding-left: 0;
-    padding-top: var(--pad-and-gap);
-    width: 10em;
-    height: 10em;
-    border-radius: 0.8em;
-    font-family: var(--font);
-}
-
 .search {
     grid-row-start: 2;
     grid-row-end: 2;
@@ -403,14 +388,15 @@ form fieldset legend {
 }
 
 #filterResults {
-    width: 4em;
+    width: 5em;
     height: 2em;
     border-radius: 4em;
     border: 1px solid black;
     background-image: url(../img/search_bar.svg);
     background-repeat: no-repeat;
-    background-size: 55%;
+    background-size: 43%;
     background-color: var(--lightmocha);
+    padding-left: calc(var(--pad-and-gap)*2);
 }
 
 #filterResults:hover {
@@ -502,19 +488,12 @@ nav .navigation ul {
     color: black;
 }
 
-.submenu li {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    justify-content: left;
-    padding-left: calc(var(--pad-and-gap)/2);
-    align-items: center;
+.submenu {
+    display: none;
 }
 
-.submenu li:hover {
-    background-color: var(--violet);
-    border-radius: 0.7em;
+.submenu li {
+    display: none;
 }
 
 .filter-options {
@@ -753,6 +732,40 @@ nav .navigation ul {
 
     .menu-toggle {
         display: none;
+    }
+
+    .menu.active {
+        display: none;
+    }
+
+    .submenu {
+        background-color: var(--lightmocha);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 0;
+        padding-left: 0;
+        padding-top: var(--pad-and-gap);
+        width: 10em;
+        height: 10em;
+        border-radius: 0.8em;
+        font-family: var(--font);
+    }
+
+    .submenu li {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        justify-content: left;
+        padding-left: calc(var(--pad-and-gap)/2);
+        align-items: center;
+    }
+
+    .submenu li:hover {
+        background-color: var(--violet);
+        border-radius: 0.7em;
     }
 
     .heading {
