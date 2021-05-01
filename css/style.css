@@ -312,6 +312,7 @@ form fieldset:hover ul {
     background-repeat: no-repeat;
     background-size: 55%;
     background-color: var(--lightmocha);
+    padding-left: calc(var(--pad-and-gap)*1.5);
 }
 
 #filterResults:hover {
