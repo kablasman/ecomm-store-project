@@ -71,6 +71,14 @@ let products = [
         bookRating: 3.0,
         bookImage: 'night-drawing-black-book-cover-design-template-ea74bc762820a4c4a426e4df9f3897ef_screen.jpg',
         bookCategory: 'popularity-label.svg'
+    },
+    {
+        bookTitle: 'Ensaladas',
+        bookAuthor: 'Silvia Bechamel',
+        bookPrice: 18.45,
+        bookRating: 3.5,
+        bookImage: 'caratula-de-libro-de-recetas-de-ensaladas-design-template-5734d23e3c3900de9fd394218b419e97_screen.jpeg',
+        bookCategory: 'wellness-label.svg'
     }
 
 ];
