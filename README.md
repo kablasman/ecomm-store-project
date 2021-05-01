@@ -33,6 +33,7 @@ Read and complete the steps in the following two documents:
 ##### The Night Profecy: Designed by Marcus Aurelius Valerius Massentius
 ##### Secret Recipes: Designed by Sirle K
 ##### Drawn to the Sky: Designed by Sirle K
+##### Ensaladas: Designed by Silvia
 #### Suggested Book Covers
 
 ##### Green Hell: Designed by Marcus Aurelius Valerius Massentius
