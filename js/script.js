@@ -137,7 +137,7 @@ products.forEach((book) => {
     console.log(`${book.bookTitle} ${book.bookAuthor}: ${book.bookPrice} ${book.bookRating}`);
 });
 
-// ------------------ DROPDOWN FUNCTION -------------------
+// ------------------ TOGGLE FUNCTION ---------------------
 // dropdown menu toggle -----------------------------------
 document.querySelector('.menu-toggle').addEventListener('click', openMenu);
 

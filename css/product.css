@@ -131,18 +131,6 @@ form fieldset legend {
     padding: calc(var(--pad-and-gap)/3) 0;
 }
 
-form fieldset:hover ul {
-    display: flex;
-    flex-direction: column;
-}
-
-/*.product-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--pad-and-gap);
-    padding-top: calc(var(--pad-and-gap)*2);
-}*/
-
 .gallery  {
     margin: 6em;
     margin-top: 0;
@@ -380,16 +368,6 @@ form fieldset:hover ul {
     font-family: var(--font);
 }
 
-/*.find {
-    position: relative;
-    background-color: var(--darker);
-    height: 2em;
-    width: 15em;
-    border-radius: 1em;
-    border: none;
-    color: black;
-}*/
-
 .search {
     grid-row-start: 2;
     grid-row-end: 2;
@@ -513,14 +491,6 @@ nav .navigation ul {
     border-radius: 0.7em;
 }
 
-/*.find:hover {
-    background-color: var(--orange);
-}
-.search:hover .find:hover {
-    transform: translate(-50%, -80%);
-    width: 10em;
-}*/
-
 .filter-options {
     display: flex;
     flex-direction: column;
@@ -580,18 +550,8 @@ nav .navigation ul {
     display: flex;
 }
 
-.filter-options legend:hover {
-    background-color: var(--yellow); 
-    border-radius: 1em;
-    padding: 0 0.5em;
-}
- 
 .filter-options li {
     display: none;
-}
-
-.filter-options li:hover {
-    display: flex;
 }
 
 .my-checkbox {
@@ -694,22 +654,6 @@ nav .navigation ul {
         padding-top: var(--pad-and-gap);
         font-size: 1.3em;
     }
-
-    /*.product-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: var(--pad-and-gap);
-    }*/
-    
-    /*.product-1 {
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
-
-    .product-2 {
-        grid-column-start: 2;
-        grid-column-end: 3;
-    }*/
 
     .gallery {
         margin: 6em;

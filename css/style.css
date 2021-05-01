@@ -127,11 +127,6 @@ form fieldset legend {
     padding: calc(var(--pad-and-gap)/3) 0;
 }
 
-form fieldset:hover ul {
-    display: flex;
-    flex-direction: column;
-}
-
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -159,21 +154,6 @@ form fieldset:hover ul {
     color: white;
     text-shadow: 2px 3px black;
 }
-
-/*.product h3 {
-    background-color: var(--blue);
-    border-radius: 1em;
-    padding: 0 calc(var(--pad-and-gap)/2);
-}*/
-
-/*.navigation {
-    width: 80%;
-    padding-top: 2em;
-    grid-row-start: 3;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 4;
-}*/
 
 .navigation {
     grid-column-start: 5;
