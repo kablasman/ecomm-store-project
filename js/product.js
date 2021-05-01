@@ -67,6 +67,14 @@ let products = [
 
 ];
 
+// ------------------ TOGGLE FUNCTION ---------------------
+// dropdown menu toggle -----------------------------------
+document.querySelector('.menu-toggle').addEventListener('click', openMenu);
+
+function openMenu() {
+    document.querySelector('.menu').classList.toggle("active");
+}
+
 // ------------------ GALLERY FUNCTION ------------------
 // gallery ----------------------------------------------
 // adds a click event for gallery button that sets image to active

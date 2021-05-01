@@ -186,6 +186,32 @@ form fieldset legend {
     grid-row-end: 2;
 }
 
+.menu-toggle {
+    padding-top: calc(var(--pad-and-gap)/1.5);
+}
+
+.menu.active {
+    padding-top: calc(var(--pad-and-gap)*1.5);
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background-color: var(--lightmocha);
+    border-radius: 1em;
+    right: 0;
+    align-items: center;
+}
+
+.menu.active li:hover {
+    background-color: var(--violet);
+    border-radius: 2em;
+}
+
+.menu.active li {
+    padding: calc(var(--pad-and-gap)/8) var(--pad-and-gap);
+    margin: calc(var(--pad-and-gap)/2);
+    text-align: center;
+}
+
 .product {
     margin: 4em 1em;
     margin-bottom: 0;
