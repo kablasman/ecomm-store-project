@@ -311,6 +311,10 @@ form fieldset legend {
     max-width: 80em;
 }
 
+.filters h1 p {
+    max-width: 150em;
+}
+
 .results {
     padding: 0 var(--pad-and-gap);
 }
@@ -344,7 +348,7 @@ form fieldset legend {
 }
 
 .suggested h3 {
-    padding-top: var(--pad-and-gap);
+    padding-top: calc(var(--pad-and-gap)/1.5);
 }
 
 .child-2 {
@@ -545,6 +549,11 @@ nav .navigation ul {
     background-color: var(--beige);
     padding: 0 calc(var(--pad-and-gap)/2);
     border-radius: 1em;
+}
+
+.book-label-main {
+    padding-top: var(--pad-and-gap);
+    padding-bottom: var(--pad-and-gap);
 }
 
 .book-label {
