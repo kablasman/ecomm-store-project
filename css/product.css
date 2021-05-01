@@ -553,6 +553,7 @@ nav .navigation ul {
 .book-label-main {
     padding-top: var(--pad-and-gap);
     padding-bottom: var(--pad-and-gap);
+    width: 100%;
 }
 
 .book-label {
