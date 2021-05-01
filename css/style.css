@@ -141,7 +141,6 @@ form fieldset legend {
     position: fixed;
     justify-items: center;
     padding: var(--pad-and-gap);
-    padding-bottom: 0.2em;
 }
 
 .heading {
