@@ -82,11 +82,11 @@ console.table(products);
 //remove products from html after put in js
 //appendChild at end ------------------------------------
 
-let productTable = document.querySelector('.grid-container')
+let productTable = document.querySelector('.grid-container');
 
 products.forEach((product) => {
-    let oneProduct = document.createElement(`article`)
-    oneProduct.classList.add(`product`)
+    let oneProduct = document.createElement(`article`);
+    oneProduct.classList.add(`product`);
     oneProduct.innerHTML = `
     <header>
         <a href="product.html"><img src="img/${product.bookImage}" alt="${product.bookTitle}"></a>
@@ -134,9 +134,10 @@ productTable.appendChild(oneProduct);
 });
 
 products.forEach((book) => { 
-    console.log(`${book.bookTitle} ${book.bookAuthor}: ${book.bookPrice} ${book.bookRating}`)
+    console.log(`${book.bookTitle} ${book.bookAuthor}: ${book.bookPrice} ${book.bookRating}`);
 });
 
+// ------------------ DROPDOWN FUNCTION -------------------
 // dropdown menu toggle -----------------------------------
 document.querySelector('.menu-toggle').addEventListener('click', openMenu);
 
@@ -144,20 +145,21 @@ function openMenu() {
     document.querySelector('.menu').classList.toggle("active");
 }
 
+// ------------------ SEARCH FUNCTION ----------------------
 // search filter  ------------------------------------------
 // referencing product array to search from 
 const searchFilter = {
     query: ''
 }
 
-let filterResults = document.getElementById('filterResults')
+let filterResults = document.getElementById('filterResults');
 
 const setProductToTable = function(products) {
     productTable.innerHTML = ''
     products.forEach((product) => {
-        let articleItem = document.createElement('article')
+        let articleItem = document.createElement('article');
 
-        articleItem.classList.add('product')
+        articleItem.classList.add('product');
         articleItem.innerHTML = `
         <header>
             <a href="product.html"><img src="img/${product.bookImage}" alt="${product.bookTitle}"></a>
@@ -200,7 +202,7 @@ const setProductToTable = function(products) {
             <button type="button" class="add-cart"><span class="material-icons"></span>Add to Cart</button>
         </footer>
         `
-        productTable.appendChild(articleItem)
+        productTable.appendChild(articleItem);
     });
 
 }
@@ -208,11 +210,11 @@ const setProductToTable = function(products) {
 // filter through products array and pull values to search for
 const filterAndSort = function(){
     let filteredProducts = products.filter(function(product){
-        let titleSearch = product.bookTitle.toUpperCase()
-        let authorSearch = product.bookAuthor.toUpperCase()
+        let titleSearch = product.bookTitle.toUpperCase();
+        let authorSearch = product.bookAuthor.toUpperCase();
 
-        return (titleSearch.includes(searchFilter.query) || authorSearch.includes(searchFilter.query))
-    })
+        return (titleSearch.includes(searchFilter.query) || authorSearch.includes(searchFilter.query));
+    });
 
     // assign filtered product results to UI
     setProductToTable(filteredProducts);
@@ -220,7 +222,7 @@ const filterAndSort = function(){
 
 // search through array
 filterResults.addEventListener('input', function(event) {
-    searchFilter.query = event.target.value.toUpperCase()
+    searchFilter.query = event.target.value.toUpperCase();
 
     filterAndSort();
 })
@@ -229,8 +231,7 @@ filterResults.addEventListener('input', function(event) {
 setProductToTable(products);
 
 
-
-
+// ------------------ CART FUNCTION --------------------
 // update shopping bag ---------------------------------
 
 let cart = document.querySelectorAll('.add-cart');
@@ -272,5 +273,4 @@ function addedToCart() {
     }
 }
 
-updateCart()
-localStorage.clear()
+updateCart();

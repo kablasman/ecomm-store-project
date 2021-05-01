@@ -413,14 +413,6 @@ form fieldset:hover ul {
     display: none;
 }
 
-/*.find:hover {
-    background-color: var(--orange);
-}
-.search:hover .find:hover {
-    transform: translate(-50%, -80%);
-    width: 10em;
-}*/
-
 .filter-options {
     display: flex;
     flex-direction: column;
@@ -474,13 +466,6 @@ form fieldset:hover ul {
 .book-label {
     padding-top: var(--pad-and-gap);
 }
-
-/*.filter-options legend:hover {
-}*/
- 
-/*.filter-options li {
-    display: none;
-}*/
 
 .sort {
     padding-right: calc(var(--pad-and-gap)/2);
@@ -536,9 +521,9 @@ form fieldset:hover ul {
     display: none;
 }
 
-.filter-list.open {
+/*.filter-list.open {
     display: block;
-}
+}*/
 
 @media screen and (min-width: 28em) {
     
