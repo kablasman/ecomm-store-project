@@ -45,6 +45,7 @@ Happy shopping! Don't shop too hard!
 ##### 72 Hours: Designed by David Wa
 ##### Ice Desert: Designed by Marcus Aurelius Valerius Massentius
 ##### Close to Home: Designed by DG
+##### Away: Designed by Silvia
 ### Test Screenshots
 
 <img src="img/w3-validator.png"/>
