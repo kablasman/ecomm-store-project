@@ -40,10 +40,6 @@ main {
     padding-bottom: calc(var(--pad-and-gap)*3);
 }
 
-h1 {
-    font-size: 1.5em;
-}
-
 h2 {
     font-size: 1.2em;
     margin: 0;
@@ -58,6 +54,10 @@ h3 {
 h4 {
     margin-top: calc(var(--pad-and-gap)/3);
     margin-bottom: calc(var(--pad-and-gap)/3);
+}
+
+table td {
+    width: 7em;
 }
 
 hr {
@@ -312,6 +312,18 @@ form fieldset legend {
     max-width: 100em;
 }
 
+.about h1 {
+    font-size: 1.5em;
+}
+
+.suggested h1 {
+    font-size: 1.5em;
+}
+
+.details h1 {
+    font-size: 1.4em;
+}
+
 .results {
     padding: 0 var(--pad-and-gap);
 }
@@ -324,7 +336,7 @@ form fieldset legend {
     grid-row-start: 1;
     grid-column-start: 1;
     grid-column-end: 4;
-    margin-top: 0;
+    margin-top: calc(var(--pad-and-gap)/2);
     margin-bottom: 1.3em;
 }
 
@@ -332,7 +344,6 @@ form fieldset legend {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0 var(--pad-and-gap);
-    padding-bottom: calc(var(--pad-and-gap)*2);
     column-gap: var(--pad-and-gap);
 }
 
@@ -341,8 +352,7 @@ form fieldset legend {
     grid-column-start: 1;
     grid-column-end: 2;
     font-size: 0.8em;
-    padding-bottom: var(--pad-and-gap);
-
+    padding-bottom: calc(var(--pad-and-gap)*2);
 }
 
 .suggested h3 {
@@ -354,7 +364,7 @@ form fieldset legend {
     grid-column-start: 2;
     grid-column-end: 3;
     font-size: 0.8em;
-    padding-bottom: var(--pad-and-gap);
+    padding-bottom: calc(var(--pad-and-gap)*2);
 }
 
 .child-3 {
@@ -362,7 +372,7 @@ form fieldset legend {
     grid-column-start: 3;
     grid-column-end: 4;
     font-size: 0.8em;
-    padding-bottom: var(--pad-and-gap);
+    padding-bottom: calc(var(--pad-and-gap)*2);
 }
 
 .child-4 {
@@ -370,7 +380,7 @@ form fieldset legend {
     grid-column-start: 1;
     grid-column-end: 2;
     font-size: 0.8em;
-    padding-bottom: var(--pad-and-gap);
+    padding-bottom: calc(var(--pad-and-gap)*2);
 }
 
 .child-5 {
@@ -378,7 +388,7 @@ form fieldset legend {
     grid-column-start: 2;
     grid-column-end: 3;
     font-size: 0.8em;
-    padding-bottom: var(--pad-and-gap);
+    padding-bottom: calc(var(--pad-and-gap)*2);
 }
 
 .child-6 {
@@ -386,7 +396,7 @@ form fieldset legend {
     grid-column-start: 3;
     grid-column-end: 4;
     font-size: 0.8em;
-    padding-bottom: var(--pad-and-gap);
+    padding-bottom: calc(var(--pad-and-gap)*2);
 }
 
 .search {
@@ -555,11 +565,18 @@ nav .navigation ul {
     border-radius: 2em;
     background-color: white;
     margin-top: var(--pad-and-gap);
-    margin-bottom: var(--pad-and-gap);
+    margin-bottom: 0;
     padding: calc(var(--pad-and-gap)/2);
     align-items: center;
     border: none;
     box-shadow: 1px 1px var(--darker);
+}
+
+.details {
+    padding: var(--pad-and-gap);
+    padding-top: 0;
+    padding-bottom: calc(var(--pad-and-gap)*2.5);
+    font-size: 1.1em;
 }
 
 @media screen and (min-width: 28em) {
@@ -571,9 +588,6 @@ nav .navigation ul {
 
 @media screen and (min-width: 45em) {
     
-    h1 {
-        font-size: 1.5em;
-    }
     
     h2 {
         font-size: 1.2em;
