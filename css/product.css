@@ -307,13 +307,14 @@ form fieldset legend {
     margin: auto;
 }
 
+.about {
+    padding: 0 var(--pad-and-gap);
+    max-width: 100em;
+}
+
 .filters {
     padding: 0 var(--pad-and-gap);
     max-width: 80em;
-}
-
-.filters h1 p {
-    max-width: 150em;
 }
 
 .results {
