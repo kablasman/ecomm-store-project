@@ -309,6 +309,7 @@ form fieldset legend {
 
 .filters {
     padding: 0 var(--pad-and-gap);
+    max-width: 80em;
 }
 
 .filters h1 p {
