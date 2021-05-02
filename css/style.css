@@ -253,11 +253,14 @@ form fieldset legend {
 
 .filters {
     padding: 0 var(--pad-and-gap);
-    max-width: 80em;
+    max-width: 100em;
+    margin: auto;
 }
 
 .results {
     padding: 0 var(--pad-and-gap);
+    max-width: 100em;
+    margin: auto;
 }
 
 .subheading {
