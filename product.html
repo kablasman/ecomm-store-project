@@ -1,248 +1,249 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Book Nook</title>
-        <meta name="description" content="A webstore that sells books">
-        <meta name="author" content="Katherine Blasman">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="css/product.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <header class="page-header">
-            <a href="index.html" class="logo"> <img src="img/booknook_logo.svg" alt="book logo" width="200"></a>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Nook</title>
+    <meta name="description" content="A webstore that sells books">
+    <meta name="author" content="Katherine Blasman">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="index.html" class="logo"> <img src="img/booknook_logo.svg" alt="book logo" width="200"></a>
 
-        <!-- Navigation menu and toggle button -->
-        <nav aria-label="Primary" class="navigation">
-            <div class="menu-toggle">
-                <a href="#"><img src="img/menu-toggle.svg" alt="toggle menu" width="32em"></a>
-            </div>
-            <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Books</a>
-                <ul class="submenu">
-                <li><a href="#">Shop All</a></li>
-                <li><a href="#">New & Hot</a></li>
-                <li><a href="#">Bestsellers</a></li>
-                <li><a href="#">By Author</a></li>
-                <li><a href="#">Employee Picks</a></li>
-                <li><a href="#">Sale</a></li>
-                </ul>
-            </li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+      <!-- Navigation menu and toggle button -->
+      <nav aria-label="Primary" class="navigation">
+        <div class="menu-toggle">
+            <a href="#"><img src="img/menu-toggle.svg" alt="toggle menu" width="32em"></a>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Books</a>
+            <ul class="submenu">
+              <li><a href="#">Shop All</a></li>
+              <li><a href="#">New & Hot</a></li>
+              <li><a href="#">Bestsellers</a></li>
+              <li><a href="#">By Author</a></li>
+              <li><a href="#">Employee Picks</a></li>
+              <li><a href="#">Sale</a></li>
             </ul>
-        </nav>
-            <!-- Search for a product -->
-            <fieldset class="search">
-              <input type="search" name="search" id="filterResults" autocomplete="off">
-            </fieldset>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
 
-        <!-- Additional links -->
-        <ul class="your-products">
-            <li><a href="#" class="fav"><span class="material-icons" aria-label="Favourites">favorite</span></a></li>
-            <li class="cart"><a href="#" class="bag"><div class="material-icons" aria-label="Add to bag">shopping_bag</div><span>0</span></a></li>
-          </ul>
+      <!-- Search for a product -->
+      <fieldset class="search">
+        <input type="search" name="search" id="filterResults" autocomplete="off">
+      </fieldset>
+
+      <!-- Additional links -->
+      <ul class="your-products">
+        <li><a href="#" class="fav"><span class="material-icons" aria-label="Favourites">favorite</span></a></li>
+        <li class="cart"><a href="#" class="bag"><div class="material-icons" aria-label="Add to bag">shopping_bag</div><span>0</span></a></li>
+      </ul>
+    </header>
+
+    <main class="products">
+      <article class="product">
+        <header class="product-container">
+          <figure class="gallery" id="gallery">
+            <img src="img/action-thriller-book-cover-design-template-3675ae3e3ac7ee095fc793ab61b812cc_screen.jpg" alt="book image" id="img1" class="gallery-img active" width="100%"></a>
+            <img src="img/unsplash_photoshoppedimg.png" alt="author image" id="img2" class="gallery-img" width="100%"></a>
+            <ol class="gallery-controls" id="controls">
+              <li><button class="gallery-button active" aria-controls="img1" aria-label="Image 1"></button></li>
+              <li><button class="gallery-button" aria-controls="img2" aria-label="Image 2"></button></li>
+            </ol>
+          </figure>
         </header>
-
-        <main class="products">
-            <article class="product">
-                <header class="product-container">
-                    <figure class="gallery" id="gallery">
-                        <img src="img/action-thriller-book-cover-design-template-3675ae3e3ac7ee095fc793ab61b812cc_screen.jpg" alt="book image" id="img1" class="gallery-img active" width="100%"></a>
-                        <img src="img/unsplash_photoshoppedimg.png" alt="author image" id="img2" class="gallery-img" width="100%"></a>
-                        <ol class="gallery-controls" id="controls">
-                            <li><button class="gallery-button active" aria-controls="img1" aria-label="Image 1"></button></li>
-                            <li><button class="gallery-button" aria-controls="img2" aria-label="Image 2"></button></li>
-                        </ol>
-                    </figure>
-                </header>
-                <div class="product-info">
-                    <div class="book-label-main"><img src="img/fiction-label.svg" alt="book category"></div>
-                    <h3>The King of Drugs</h3>
-                    <h4>by Nora Barrett</h4>
-                    <img src="img/label.svg" alt="label for item" width="80">
-                    <data><del>$27.74</del> <ins>$13.72</ins></data>
-                    <dl>
-                    <dt>Rating</dt>
-                    <dd>3.5 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span><span class="material-icons">star_border</span></dd>
-                    <a href="#">see reviews</a>
-                    </dl>
-                    <form>
-                        <fieldset>
-                        <legend>Type</legend>
-                        <div class="product-info-1">
-                            <ul>
-                                <li>
-                                <label class="my-checkbox">
-                                    <input type="checkbox"/> 
-                                    <span>Hardcover</span>
-                                </label>
-                                </li>
-                                <li>
-                                <label class="my-checkbox">
-                                    <input type="checkbox"/> 
-                                    <span>Paperback</span>
-                                </label>
-                                </li>
-                                <li>
-                                <label class="my-checkbox">
-                                    <input type="checkbox"/> 
-                                    <span>eBook</span>
-                                </label>
-                                </li>
-                            </ul>
-                        </div>
-                        </fieldset>
-                    </form>
-                    <footer class="large-scale">
-                        <button type="button" class="add-cart"><span class="material-icons"></span>Add to Cart</button>
-                        <button class="favourites" type="button"><span class="material-icons"></span>Add to Favourites</button>
-                    </footer>
-                </div>
-            </article>
-
-            <!-- About the book -->
-            <hr>
-            <section class="about">
-                <h1>About</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo iure ullam nemo ducimus libero architecto soluta in a odit ad consequatur, eius harum quidem minima ipsa et perspiciatis animi vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, laudantium sed. Nemo aliquam totam optio minus laudantium nihil nobis odit illum ab at hic exercitationem temporibus voluptates possimus, atque facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ad magni harum. Cum odio quaerat doloribus voluptatum doloremque. Numquam adipisci necessitatibus ipsa nostrum cumque rem molestias, fugit architecto unde perspiciatis? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus dolores architecto accusamus facilis, incidunt similique maiores porro ab excepturi dignissimos tempora deleniti atque qui rem placeat, obcaecati ipsam! Impedit, laborum?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque quis quidem, atque earum illum beatae quisquam dicta quibusdam, doloremque neque quo sint libero laboriosam, voluptatibus accusamus porro officiis quaerat? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, asperiores cumque! Eaque adipisci quam modi aliquid. Natus quisquam sed ratione magnam ut labore quam fugit amet odit dolore! Dolorem, aspernatur.</p>
-            </section>
-
-            <!-- Suggested books -->
-            <section class="suggested">
-                <h1 class="grid-title">Suggested Reads</h1>
-                <div class="child-1">
-                    <img src="img/green-hell-jungle-book-cover-design-template-fe2fb71e7a440c31e6f6b51e090a18b2_screen.jpg" alt="book image">
-                    <div class="book-label"><img src="img/fiction-label.svg" alt="book category" width="80%"></div>
-                    <h3>Green Hell</h3>
-                    <h4>by Caracalla</h4>
-                    <data><ins>$23.80</ins></data>
-                    <footer>
-                      <button type="button" class="suggested-button"><span class="material-icons"></span>Add to Cart</button>
-                    </footer>
-                </div>
-                <div class="child-2">
-                    <img src="img/thriller-murder-mystery-horror-book-cover-design-template-e20fd8baa70d9064f50617067ac4260f_screen.jpg" alt="book image">
-                    <div class="book-label"><img src="img/popularity-label.svg" alt="book category" width="80%"></div>
-                    <h3>The Trucker</h3>
-                    <h4>by Tripp Wellington</h4>
-                    <data><ins>$26.40</ins></data>
-                    <footer>
-                      <button type="button" class="suggested-button"><span class="material-icons"></span>Add to Cart</button>
-                    </footer>
-                </div>
-                <div class="child-3">
-                    <img src="img/thriller-motion-book-cover-design-template-8abb2273c475a164afc603fc63a33e73_screen.jpg" alt="book image">
-                    <div class="book-label"><img src="img/teens-label.svg" alt="book category" width="80%"></div>
-                    <h3>72 Hours</h3>
-                    <h4>by Andrew Gillingham</h4>
-                    <data><ins>$18.90</ins></data>
-                    <footer>
-                      <button type="button" class="suggested-button"><span class="material-icons"></span>Add to Cart</button>
-                    </footer>
-                </div>
-                <div class="child-4">
-                    <img src="img/ice-desert-book-novel-template-design-ea903e8bd2ec38dbdb73e666a16d69af_screen.jpg" alt="book image">
-                    <div class="book-label"><img src="img/fiction-label.svg" alt="book category" width="80%"></div>
-                    <h3>Ice Desert</h3>
-                    <h4>by Elton Muscle</h4>
-                    <data><ins>$26.90</ins></data>
-                    <footer>
-                      <button type="button" class="suggested-button"><span class="material-icons"></span>Add to Cart</button>
-                    </footer>
-                </div>
-                <div class="child-5">
-                    <img src="img/kindle-book-cover-template-design-ebb32ab14859d728f23695ac9d12960d_screen.jpg" alt="book image">
-                    <div class="book-label"><img src="img/popularity-label.svg" alt="book category" width="80%"></div>
-                    <h3>Close to Home</h3>
-                    <h4>by Richard May</h4>
-                    <data><ins>$29.50</ins></data>
-                    <footer>
-                      <button type="button" class="suggested-button"><span class="material-icons"></span>Add to Cart</button>
-                    </footer>
-                </div>
-                <div class="child-6">
-                  <img src="img/kindle-free-book-cover-template-design-flyer-1c529e727aedeb0b9fa8f4bbb16a0561_screen.jpeg" alt="book image">
-                  <div class="book-label"><img src="img/popularity-label.svg" alt="book category" width="80%"></div>
-                  <h3>Away</h3>
-                  <h4>by Sylvia Walker</h4>
-                  <data><ins>$18.50</ins></data>
-                  <footer>
-                    <button type="button" class="suggested-button"><span class="material-icons"></span>Add to Cart</button>
-                  </footer>
+        <div class="product-info">
+          <div class="book-label-main"><img src="img/fiction-label.svg" alt="book category"></div>
+          <h3>The King of Drugs</h3>
+          <h4>by Nora Barrett</h4>
+          <img src="img/label.svg" alt="label for item" width="80">
+          <data><del>$27.74</del> <ins>$13.72</ins></data>
+          <dl>
+          <dt>Rating</dt>
+          <dd>3.5 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span><span class="material-icons">star_border</span></dd>
+          <a href="#">see reviews</a>
+          </dl>
+          <form>
+            <fieldset>
+              <legend>Type</legend>
+              <div class="product-info-1">
+                <ul>
+                  <li>
+                    <label class="my-checkbox">
+                      <input type="checkbox"/> 
+                      <span>Hardcover</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="my-checkbox">
+                      <input type="checkbox"/> 
+                      <span>Paperback</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="my-checkbox">
+                      <input type="checkbox"/> 
+                      <span>eBook</span>
+                    </label>
+                  </li>
+                </ul>
               </div>
-            </section>
-            
-            <!-- Details and specs -->
-            <section class="details">
-              <h1>Details & Specs</h1>
-              <table>
-                <tr>
-                  <td>Title:</td>
-                  <td>The King of Drugs</td>
-                </tr>
-                <tr>
-                  <td>Format:</td>
-                  <td>Paperback</td>
-                </tr>
-                <tr>
-                  <td>Dimensions:</td>
-                  <td>8.5 X 9.5 X 0.25 in</td>
-                </tr>
-                <tr>
-                  <td>Published:</td>
-                  <td>April 13, 2021</td>
-                </tr>
-                <tr>
-                  <td>Publisher:</td>
-                  <td>Publishing Studios </td>
-                </tr>
-                <tr>
-                  <td>Language:</td>
-                  <td>English</td>
-                </tr>
-                <tr>
-                  <td>ISBN:</td>
-                  <td>728329030304043</td>
-                </tr>
-              </table>
-            </section>
-        </main>
-        <footer class="page-footer">
-            <ul class="social">
-              <li><a href="www.gmail.com"><i class="fa fa-google fa-lg"></i></a></li>
-              <li><a href="www.facebook.com"><i class="fa fa-facebook-f fa-lg"></i></a></li>
-              <li><a href="www.instagram.com"><i class="fa fa-instagram fa-lg"></i></a></li>
-              <li><a href="www.twitter.com"><i class="fa fa-twitter fa-lg"></i></a></li>
-              <li><a href="www.linkedin.com"><i class="fa fa-linkedin fa-lg"></i></a></li>
-            </ul>
-            <div class="footer-grid">
-              <nav aria-label="Legal">
-                <h2 class=footer-resize>Contact</h2>
-                <ul class="contact">
-                    <li></li>
-                    <li>1100 Bay St</li>
-                    <li>Toronto, ON</li>
-                    <li>M5S 2Y1</li>
-                </ul>
-              </nav>
-              <nav aria-label="Legal">
-                <h2 class="footer-resize">Legal</h2>
-                <ul class="legal">
-                  <li></li>
-                  <li><a href="#">Terms of Use</a></li>
-                  <li><a href="#">Privacy</a></li>
-                  <li><a href="#">Accessibility</a></li>
-                </ul>
-              </nav>
-            </div>
-            <p class="copyright">&copy; Copyright, 2021.</p>
-        </footer>
-        <script src="js/product.js"></script>
-    </body>
+            </fieldset>
+          </form>
+          <footer class="large-scale">
+            <button type="button" class="add-cart"><span class="material-icons"></span>Add to Cart</button>
+            <button class="favourites" type="button"><span class="material-icons"></span>Add to Favourites</button>
+          </footer>
+        </div>
+      </article>
+
+      <!-- About the book -->
+      <hr>
+      <section class="about">
+        <h1>About</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo iure ullam nemo ducimus libero architecto soluta in a odit ad consequatur, eius harum quidem minima ipsa et perspiciatis animi vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, laudantium sed. Nemo aliquam totam optio minus laudantium nihil nobis odit illum ab at hic exercitationem temporibus voluptates possimus, atque facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ad magni harum. Cum odio quaerat doloribus voluptatum doloremque. Numquam adipisci necessitatibus ipsa nostrum cumque rem molestias, fugit architecto unde perspiciatis? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus dolores architecto accusamus facilis, incidunt similique maiores porro ab excepturi dignissimos tempora deleniti atque qui rem placeat, obcaecati ipsam! Impedit, laborum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque quis quidem, atque earum illum beatae quisquam dicta quibusdam, doloremque neque quo sint libero laboriosam, voluptatibus accusamus porro officiis quaerat? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, asperiores cumque! Eaque adipisci quam modi aliquid. Natus quisquam sed ratione magnam ut labore quam fugit amet odit dolore! Dolorem, aspernatur.</p>
+      </section>
+
+      <!-- Suggested books -->
+      <section class="suggested">
+        <h1 class="grid-title">Suggested Reads</h1>
+        <div class="child-1">
+          <img src="img/green-hell-jungle-book-cover-design-template-fe2fb71e7a440c31e6f6b51e090a18b2_screen.jpg" alt="book image">
+          <div class="book-label"><img src="img/fiction-label.svg" alt="book category" width="80%"></div>
+          <h3>Green Hell</h3>
+          <h4>by Caracalla</h4>
+          <data><ins>$23.80</ins></data>
+          <footer>
+            <button type="button" class="suggested-button"><span class="material-icons"></span>Add to Cart</button>
+          </footer>
+        </div>
+        <div class="child-2">
+          <img src="img/thriller-murder-mystery-horror-book-cover-design-template-e20fd8baa70d9064f50617067ac4260f_screen.jpg" alt="book image">
+          <div class="book-label"><img src="img/popularity-label.svg" alt="book category" width="80%"></div>
+          <h3>The Trucker</h3>
+          <h4>by Tripp Wellington</h4>
+          <data><ins>$26.40</ins></data>
+          <footer>
+            <button type="button" class="suggested-button"><span class="material-icons"></span>Add to Cart</button>
+          </footer>
+        </div>
+        <div class="child-3">
+          <img src="img/thriller-motion-book-cover-design-template-8abb2273c475a164afc603fc63a33e73_screen.jpg" alt="book image">
+          <div class="book-label"><img src="img/teens-label.svg" alt="book category" width="80%"></div>
+          <h3>72 Hours</h3>
+          <h4>by Andrew Gillingham</h4>
+          <data><ins>$18.90</ins></data>
+          <footer>
+            <button type="button" class="suggested-button"><span class="material-icons"></span>Add to Cart</button>
+          </footer>
+        </div>
+        <div class="child-4">
+          <img src="img/ice-desert-book-novel-template-design-ea903e8bd2ec38dbdb73e666a16d69af_screen.jpg" alt="book image">
+          <div class="book-label"><img src="img/fiction-label.svg" alt="book category" width="80%"></div>
+          <h3>Ice Desert</h3>
+          <h4>by Elton Muscle</h4>
+          <data><ins>$26.90</ins></data>
+          <footer>
+            <button type="button" class="suggested-button"><span class="material-icons"></span>Add to Cart</button>
+          </footer>
+        </div>
+        <div class="child-5">
+          <img src="img/kindle-book-cover-template-design-ebb32ab14859d728f23695ac9d12960d_screen.jpg" alt="book image">
+          <div class="book-label"><img src="img/popularity-label.svg" alt="book category" width="80%"></div>
+          <h3>Close to Home</h3>
+          <h4>by Richard May</h4>
+          <data><ins>$29.50</ins></data>
+          <footer>
+            <button type="button" class="suggested-button"><span class="material-icons"></span>Add to Cart</button>
+          </footer>
+        </div>
+        <div class="child-6">
+          <img src="img/kindle-free-book-cover-template-design-flyer-1c529e727aedeb0b9fa8f4bbb16a0561_screen.jpeg" alt="book image">
+          <div class="book-label"><img src="img/popularity-label.svg" alt="book category" width="80%"></div>
+          <h3>Away</h3>
+          <h4>by Sylvia Walker</h4>
+          <data><ins>$18.50</ins></data>
+          <footer>
+            <button type="button" class="suggested-button"><span class="material-icons"></span>Add to Cart</button>
+          </footer>
+        </div>
+      </section>
+
+      <!-- Details and specs -->
+      <section class="details">
+        <h1>Details & Specs</h1>
+        <table>
+          <tr>
+            <td>Title:</td>
+            <td>The King of Drugs</td>
+          </tr>
+          <tr>
+            <td>Format:</td>
+            <td>Paperback</td>
+          </tr>
+          <tr>
+            <td>Dimensions:</td>
+            <td>8.5 X 9.5 X 0.25 in</td>
+          </tr>
+          <tr>
+            <td>Published:</td>
+            <td>April 13, 2021</td>
+          </tr>
+          <tr>
+            <td>Publisher:</td>
+            <td>Publishing Studios </td>
+          </tr>
+          <tr>
+            <td>Language:</td>
+            <td>English</td>
+          </tr>
+          <tr>
+            <td>ISBN:</td>
+            <td>728329030304043</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <ul class="social">
+        <li><a href="www.gmail.com"><i class="fa fa-google fa-lg"></i></a></li>
+        <li><a href="www.facebook.com"><i class="fa fa-facebook-f fa-lg"></i></a></li>
+        <li><a href="www.instagram.com"><i class="fa fa-instagram fa-lg"></i></a></li>
+        <li><a href="www.twitter.com"><i class="fa fa-twitter fa-lg"></i></a></li>
+        <li><a href="www.linkedin.com"><i class="fa fa-linkedin fa-lg"></i></a></li>
+      </ul>
+      <div class="footer-grid">
+        <nav aria-label="Legal">
+          <h2 class=footer-resize>Contact</h2>
+          <ul class="contact">
+            <li></li>
+            <li>1100 Bay St</li>
+            <li>Toronto, ON</li>
+            <li>M5S 2Y1</li>
+          </ul>
+        </nav>
+        <nav aria-label="Legal">
+          <h2 class="footer-resize">Legal</h2>
+          <ul class="legal">
+            <li></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="copyright">&copy; Copyright, 2021.</p>
+    </footer>
+    <script src="js/product.js"></script>
+  </body>
 </html>
