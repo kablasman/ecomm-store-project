@@ -500,10 +500,6 @@ form fieldset legend {
     display: none;
 }
 
-/*.filter-list.open {
-    display: block;
-}*/
-
 @media screen and (min-width: 28em) {
     
     .social {
@@ -652,20 +648,9 @@ form fieldset legend {
         width: 2em;
     }
 
-    .your-products {
-        grid-row-start: 1;
-        grid-row-end: 1;
-        grid-column-start: 4;
-        grid-column-end: 5;
-    }
-
     .navigation {
         width: 80%;
         padding-top: calc(var(--pad-and-gap)*1.65);
-        grid-row-start: 1;
-        grid-row-end: 1;
-        grid-column-start: 2;
-        grid-column-end: 3;
     }
 
     .heading {
@@ -674,11 +659,6 @@ form fieldset legend {
     }
 
     .filter-options {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-bottom: var(--pad-and-gap);
-        flex-wrap: wrap;
         font-size: 1.2em;
     }
 

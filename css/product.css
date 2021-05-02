@@ -219,6 +219,8 @@ form fieldset legend {
 
 .products {
     padding-bottom: 0;
+    max-width: 100em;
+    margin: auto;
 }
 
 .product-info {
@@ -307,7 +309,6 @@ form fieldset legend {
 
 .filters {
     padding: 0 var(--pad-and-gap);
-    max-width: 80em;
 }
 
 .filters h1 p {
@@ -655,9 +656,7 @@ nav .navigation ul {
     }
     
     data ins {
-        text-decoration: none;
         font-size: 1.8em;
-        color: var(--darkorange);
     }
 
     div form fieldset {
@@ -840,20 +839,8 @@ nav .navigation ul {
         width: 2em;
     }
 
-    .your-products {
-        grid-row-start: 1;
-        grid-row-end: 1;
-        grid-column-start: 4;
-        grid-column-end: 5;
-    }
-
     .navigation {
-        width: 80%;
         padding-top: calc(var(--pad-and-gap)*1.65);
-        grid-row-start: 1;
-        grid-row-end: 1;
-        grid-column-start: 2;
-        grid-column-end: 3;
     }
 
     .heading {
@@ -864,49 +851,18 @@ nav .navigation ul {
     .suggested {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        padding: 0 var(--pad-and-gap);
-        column-gap: var(--pad-and-gap);
-    }
-
-    .child-1 {
-        grid-row-start: 2;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        font-size: 0.8em;
-        padding-bottom: var(--pad-and-gap);
-    
-    }
-
-    .child-2 {
-        grid-row-start: 2;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        font-size: 0.8em;
-        padding-bottom: var(--pad-and-gap);
-    }
-
-    .child-3 {
-        grid-row-start: 2;
-        grid-column-start: 3;
-        grid-column-end: 4;
-        font-size: 0.8em;
-        padding-bottom: var(--pad-and-gap);
     }
 
     .child-4 {
         grid-row-start: 2;
         grid-column-start: 4;
         grid-column-end: 5;
-        font-size: 0.8em;
-        padding-bottom: var(--pad-and-gap);
     }
 
     .child-5 {
         grid-row-start: 2;
         grid-column-start: 5;
         grid-column-end: 6;
-        font-size: 0.8em;
-        padding-bottom: var(--pad-and-gap);
     }
 
     .filter-options {
