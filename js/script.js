@@ -301,3 +301,4 @@ function addedToCart() {
 }
 
 updateCart();
+//localStorage.clear();
