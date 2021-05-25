@@ -8,7 +8,8 @@
     --light-light-mocha: #fffaef;
     --lightmocha: #FFF4DE;
     --mocha:		#faeacc;
-    --darkmocha: #E8CF9E;
+    --darkmocha: #f0d8aa;
+    --darkermocha: #dfc38f;
     --darker: #96774a;
     --black: #000;
     --orange: #ffa339;
@@ -45,6 +46,7 @@ main {
 
 h1 {
     font-size: 1.5em;
+    margin-bottom: 0.6em;
 }
 
 h2 {
@@ -93,7 +95,7 @@ footer button {
 }
 
 form fieldset legend {
-    padding: 0.5em 0;
+    padding: 0.5em;
 }
 
 dd {
@@ -104,6 +106,11 @@ dd {
 
 a {
     color: var(--black);
+}
+
+hr {
+    border-color: var(--lightmocha);
+    border-top: 1px solid var(--darkermocha);
 }
 
 data del {
@@ -145,6 +152,14 @@ form fieldset legend {
     padding: var(--pad-and-gap);
 }
 
+.banner {
+    font-size: 0.7em;
+    padding: var(--pad-and-gap);
+    padding-top: calc(var(--pad-and-gap)*2);
+    background-color: var(--darkmocha);
+    text-align: center;
+}
+
 .heading {
     font-size: 1.8em;
     text-align: center;
@@ -153,7 +168,7 @@ form fieldset legend {
     background-repeat: no-repeat;
     padding: calc(var(--pad-and-gap)*4) 0;
     color: white;
-    text-shadow: 2px 3px black;
+    text-shadow: 0px 2px black;
 }
 
 .navigation {
@@ -263,14 +278,18 @@ form fieldset legend {
     padding: 0 var(--pad-and-gap);
     max-width: 100em;
     margin: auto;
+    margin-bottom: calc(var(--pad-and-gap)*2);
 }
 
 .grid-container .product {
     background-color: var(--light-light-mocha);
-    padding: calc(var(--pad-and-gap)*2);
+    padding: var(--pad-and-gap);
     box-shadow: 0 0 1em var(--darkmocha);
-    border-radius: 0.7em;
-    
+    border-radius: 0.4em;
+}
+
+.grid-container .product footer {
+    text-align: center;
 }
 
 .subheading {
@@ -405,10 +424,10 @@ form fieldset legend {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-bottom: var(--pad-and-gap);
+    padding-top: var(--pad-and-gap);
+    padding-bottom: 0;
     flex-wrap: wrap;
     max-width: 100em;
-    color: var(--lightmocha);
 }
 
 .filter-options fieldset {
@@ -416,47 +435,76 @@ form fieldset legend {
 }
 
 .fiction {
-    background-color: var(--blue);
+    /*background-color: var(--blue);*/
     padding: 0 calc(var(--pad-and-gap)/2);
     border-radius: 1em;
+}
+
+.fiction:hover {
+    color: var(--blue);
 }
 
 .non-fiction {
-    background-color: var(--violet);
+    /*background-color: var(--violet);*/
     padding: 0 calc(var(--pad-and-gap)/2);
     border-radius: 1em;
+}
+
+.non-fiction:hover {
+    color: var(--violet);
 }
 
 .wellness {
-    background-color: var(--pink);
+   /*background-color: var(--pink);*/
     padding: 0 calc(var(--pad-and-gap)/2);
     border-radius: 1em;
+}
+
+.wellness:hover {
+    color: var(--pink);
 }
 
 .teens {
-    background-color: var(--orange);
+    /*background-color: var(--orange);*/
     padding: 0 calc(var(--pad-and-gap)/2);
     border-radius: 1em;
+}
+
+.teens:hover {
+    color: var(--darkorange);
 }
 
 .kids {
-    background-color: var(--yellow);
+    /*background-color: var(--yellow);*/
     padding: 0 calc(var(--pad-and-gap)/2);
     border-radius: 1em;
 }
 
+.kids:hover {
+    color: var(--yellow);
+}
+
 .popularity {
-    background-color: var(--beige);
+    /*background-color: var(--beige);*/
     padding: 0 calc(var(--pad-and-gap)/2);
     border-radius: 1em;
+}
+
+.popularity:hover {
+    color: var(--beige);
 }
 
 .book-label {
     padding-top: var(--pad-and-gap);
 }
 
+.book-picture {
+    box-shadow: 1px 1px 1px black;
+}
+
 .sort {
     padding-right: calc(var(--pad-and-gap)/2);
+    margin-top: var(--pad-and-gap);
 }
 
 #sort {
@@ -465,6 +513,7 @@ form fieldset legend {
     font: var(--font);
     box-shadow: 1px 1px var(--darker);
     border: none;
+    margin-top: var(--pad-and-gap);
 }
 
 .my-checkbox {
@@ -529,7 +578,7 @@ form fieldset legend {
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: calc(var(--pad-and-gap)*1.5);
+        gap: var(--pad-and-gap);
         justify-self: center;
         justify-content: center;
         max-width: 100em;
@@ -639,10 +688,11 @@ form fieldset legend {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-bottom: var(--pad-and-gap);
+        padding-bottom: 0;
         flex-wrap: wrap;
         font-size: 1em;
     }
+
 }
 
 @media screen and (min-width: 70em) {
@@ -674,7 +724,6 @@ form fieldset legend {
     .menu {
         font-size: 1.2em;
     }
-
 
 }
 
