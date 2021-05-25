@@ -5,7 +5,8 @@
 :root {
     --lightmocha: #FFF4DE;
     --mocha:		#faeacc;
-    --darkmocha: #E8CF9E;
+    --darkmocha: #f0d8aa;
+    --darkermocha: #dfc38f;
     --darker: #96774a;
     --black: #000;
     --orange: #ffa339;
@@ -62,6 +63,7 @@ table td {
 
 hr {
     border-color: var(--lightmocha);
+    border-top: 1px solid var(--darkermocha);
     width: 80%;
 }
 
@@ -322,6 +324,14 @@ form fieldset legend {
 
 .details h1 {
     font-size: 1.4em;
+}
+
+.banner {
+    font-size: 0.7em;
+    padding: var(--pad-and-gap);
+    padding-top: calc(var(--pad-and-gap)*2);
+    background-color: var(--darkmocha);
+    text-align: center;
 }
 
 .results {
