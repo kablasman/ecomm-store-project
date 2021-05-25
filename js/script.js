@@ -116,7 +116,7 @@ products.forEach((product) => {
     oneProduct.classList.add(`product`);
     oneProduct.innerHTML = `
     <header>
-        <a href="product.html"><img src="img/${product.bookImage}" alt="${product.bookTitle}"></a>
+        <div class="book-picture"><a href="product.html"><img src="img/${product.bookImage}" alt="${product.bookTitle}"></a></div>
         <div class="book-label"><img src="img/${product.bookCategory}" alt="${product.bookCategory}" width="80%"></div>
         <h3>${product.bookTitle}</h3>
         <h4>by ${product.bookAuthor}</h4>
