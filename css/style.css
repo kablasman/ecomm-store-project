@@ -762,6 +762,10 @@ form fieldset legend {
         grid-column-start: 2;
         grid-column-end: 3;
     }
+
+    .filter-list {
+        display: block;
+    }
 }
 
 @media screen and (min-width: 70em) {
