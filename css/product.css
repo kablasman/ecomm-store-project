@@ -541,7 +541,7 @@ nav .navigation ul {
     -webkit-appearance: none;
     -moz-appearance: none;
     -o-appearance: none;
-    border: 1px solid var(--darker);
+    border: 1px solid var(--black);
     background-color: #fff;
     border-radius: 0.33em;
 }
