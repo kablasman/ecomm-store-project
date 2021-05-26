@@ -120,7 +120,6 @@ products.forEach((product) => {
         <div class="book-label"><img src="img/${product.bookCategory}" alt="${product.bookCategory}" width="80%"></div>
         <h3>${product.bookTitle}</h3>
         <h4>by ${product.bookAuthor}</h4>
-        <img src="img/${product.bookLabel}" alt="label classifying new item" width="65">
         <data value="39"><del>$${product.oldPrice}</del> <ins>$${product.bookPrice}</ins></data>
         <dl>
         <dt>Rating</dt>
@@ -193,7 +192,6 @@ const setProductToTable = function(products) {
             <div class="book-label"><img src="img/${product.bookCategory}" alt="${product.bookCategory}" width="80%"></div>
             <h3>${product.bookTitle}</h3>
             <h4>by ${product.bookAuthor}</h4>
-            <img src="img/${product.bookLabel}" alt="label for item" width="70">
             <data value="39"><del>$${product.oldPrice}</del> <ins>$${product.bookPrice}</ins></data>
             <dl>
             <dt>Rating</dt>
