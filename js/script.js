@@ -116,41 +116,13 @@ products.forEach((product) => {
     oneProduct.classList.add(`product`);
     oneProduct.innerHTML = `
     <header>
-        <div class="book-picture"><a href="product.html"><img src="img/${product.bookImage}" alt="${product.bookTitle}"></a></div>
-        <div class="book-label"><img src="img/${product.bookCategory}" alt="${product.bookCategory}" width="80%"></div>
+        <div class="book-picture">
+            <a href="product.html"><img src="img/${product.bookImage}" alt="${product.bookTitle}"></a>
+        </div>
         <h3>${product.bookTitle}</h3>
         <h4>by ${product.bookAuthor}</h4>
         <data value="39"><del>$${product.oldPrice}</del> <ins>$${product.bookPrice}</ins></data>
-        <dl>
-        <dt>Rating</dt>
-        <dd>${product.bookRating} <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span><span class="material-icons">star_border</span></dd>
-        </dl>
     </header>
-    <form>
-        <fieldset>
-        <legend>Type</legend>
-        <ul>
-            <li>
-            <label class="my-checkbox">
-                <input type="checkbox"/> 
-                <span>Hardcover</span>
-            </label>
-            </li>
-            <li>
-            <label class="my-checkbox">
-                <input type="checkbox"/> 
-                <span>Paperback</span>
-            </label>
-            </li>
-            <li>
-            <label class="my-checkbox">
-                <input type="checkbox"/> 
-                <span>eBook</span>
-            </label>
-            </li>
-        </ul>
-        </fieldset>
-    </form>
     <footer>
         <button type="button" class="add-cart"><span class="material-icons"></span>Add to Cart</button>
     </footer>
@@ -189,40 +161,10 @@ const setProductToTable = function(products) {
         articleItem.innerHTML = `
         <header>
             <a href="product.html"><img src="img/${product.bookImage}" alt="${product.bookTitle}"></a>
-            <div class="book-label"><img src="img/${product.bookCategory}" alt="${product.bookCategory}" width="80%"></div>
             <h3>${product.bookTitle}</h3>
             <h4>by ${product.bookAuthor}</h4>
             <data value="39"><del>$${product.oldPrice}</del> <ins>$${product.bookPrice}</ins></data>
-            <dl>
-            <dt>Rating</dt>
-            <dd>${product.bookRating} <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span><span class="material-icons">star_border</span></dd>
-            </dl>
         </header>
-        <form>
-            <fieldset>
-            <legend>Type</legend>
-            <ul>
-                <li>
-                <label class="my-checkbox">
-                    <input type="checkbox"/> 
-                    <span>Hardcover</span>
-                </label>
-                </li>
-                <li>
-                <label class="my-checkbox">
-                    <input type="checkbox"/> 
-                    <span>Paperback</span>
-                </label>
-                </li>
-                <li>
-                <label class="my-checkbox">
-                    <input type="checkbox"/> 
-                    <span>eBook</span>
-                </label>
-                </li>
-            </ul>
-            </fieldset>
-        </form>
         <footer>
             <button type="button" class="add-cart"><span class="material-icons"></span>Add to Cart</button>
         </footer>
