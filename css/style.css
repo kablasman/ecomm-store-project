@@ -3,28 +3,30 @@
 /* index.html */
 @import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 :root {
     --light-light-mocha: #fffaef;
-    --lightmocha: #FFF4DE;
-    --mocha:		#faeacc;
+    --lightmocha: #fff8e9;
+    --mocha:		#fff0d5;
     --darkmocha: #f0d8aa;
-    --darkermocha: #dfc38f;
-    --darker: #96774a;
+    --darkermocha: #cfb077;
+    --darker: #aa8a59;
     --black: #000;
     --orange: #ffa339;
     --darkorange: #ff9419;
     --red: #F5604C;
     --pink: #f599a8;
-    --beige: #cea97a;
+    --beige: #ecb562;
     --yellow: #ffc247;
     --green: #6DD666;
     --blue: #51e5f8;
-    --gold: #F5C51F;
+    --gold: #ffcf20;
     --violet: #e0b7f0;
     --greyed-out: #7e7363;
-    --font: 'DM Sans', sans-serif;
+    --font:  'DM Sans', sans-serif;
     --logo: 'Hepta Slab', serif;
+    --banner: 'Poppins', sans-serif;
     --pad-and-gap: 1em;
 }
 
@@ -75,13 +77,15 @@ nav ul li ul {
 button {
     border-radius: 2em;
     background-color: var(--light-light-mocha);
+    box-shadow: 0px 0px 5px var(--darkermocha);
+    color: var(--black);
     margin-top: var(--pad-and-gap);
     margin-bottom: var(--pad-and-gap);
     padding: calc(var(--pad-and-gap)/2);
     align-items: center;
-    border: 1px solid var(--black);
+    border: none;
     font-size: 1.2em;
-    color: var(--black);
+    width: 7em;
 }
 
 button:hover {
@@ -120,7 +124,7 @@ data del {
 
 data ins {
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.5em;
     color: var(--darkorange);
 }
 
@@ -164,22 +168,24 @@ form fieldset legend {
 }
 
 .banner {
+    font-family: var(--banner);
     font-size: 0.7em;
     padding: var(--pad-and-gap);
     padding-top: calc(var(--pad-and-gap)*2);
-    background-color: var(--darkmocha);
+    background-color: var(--darkorange);
     text-align: center;
 }
 
 .heading {
     font-size: 1.8em;
     text-align: center;
-    background-image: url(../img/clark-van-der-beken-1KBCgRD8BDc-unsplash.jpg);
+    background-image: url(../img/arun-clarke-EVIQTrVonSQ-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: calc(var(--pad-and-gap)*4) 0;
     color: white;
-    text-shadow: 0px 2px black;
+    text-transform: uppercase;
+    font-family: var(--banner);
 }
 
 .navigation {
@@ -298,7 +304,9 @@ form fieldset legend {
 .result-filters {
     align-content: center;
     float: right;
-    border: 1px solid var(--black);
+    border: none;
+    box-shadow: 0px 0px 4px var(--darkermocha);
+    background-color: var(--mocha);
     padding: 0.5em var(--pad-and-gap);
     border-radius: 2em;
     grid-row-start: 1;
@@ -314,10 +322,10 @@ form fieldset legend {
 }
 
 .grid-container .product {
-    background-color: var(--light-light-mocha);
     padding: var(--pad-and-gap);
-    box-shadow: 0 0 1em var(--darkmocha);
-    border-radius: 0.4em;
+    background-color: var(--light-light-mocha);
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 0.5em var(--darkmocha);
 }
 
 .grid-container .product footer {
@@ -350,7 +358,7 @@ form fieldset legend {
     width: 5em;
     height: 2em;
     border-radius: 4em;
-    border: 1px solid black;
+    border: 0.15em solid var(--black);
     background-image: url(../img/search_bar.svg);
     background-repeat: no-repeat;
     background-size: 43%;
@@ -380,7 +388,7 @@ form fieldset legend {
 }
 
 .fav {
-    color: var(--pink);
+    color: var(--darkorange);
 }
 
 .bag {
@@ -473,7 +481,7 @@ form fieldset legend {
 }
 
 .fiction:hover {
-    color: var(--blue);
+    color: var(--darkorange);
 }
 
 .non-fiction {
@@ -483,7 +491,7 @@ form fieldset legend {
 }
 
 .non-fiction:hover {
-    color: var(--violet);
+    color: var(--darkorange);
 }
 
 .wellness {
@@ -493,7 +501,7 @@ form fieldset legend {
 }
 
 .wellness:hover {
-    color: var(--pink);
+    color: var(--darkorange);
 }
 
 .teens {
@@ -513,7 +521,7 @@ form fieldset legend {
 }
 
 .kids:hover {
-    color: var(--yellow);
+    color: var(--darkorange);
 }
 
 .popularity {
@@ -523,7 +531,7 @@ form fieldset legend {
 }
 
 .popularity:hover {
-    color: var(--beige);
+    color: var(--darkorange);
 }
 
 .book-label {
@@ -531,6 +539,7 @@ form fieldset legend {
 }
 
 .book-picture {
+    border: 1px solid black;
     box-shadow: 1px 1px 1px black;
 }
 
@@ -544,7 +553,8 @@ form fieldset legend {
 #sort {
     background-color: var(--mocha);
     border-radius: 2em;
-    border: 1px solid var(--black);
+    border: none;
+    box-shadow: 0px 0px 4px var(--darkermocha);
     font: var(--font);
     padding: 0.3em 0.2em;
     margin-bottom: calc(var(--pad-and-gap)*2);
@@ -562,13 +572,14 @@ form fieldset legend {
 }
 
 .my-checkbox > input {
-    height: 1.1em;
-    width: 1.1em;
+    height: 1em;
+    width: 1em;
     -webkit-appearance: none;
     -moz-appearance: none;
     -o-appearance: none;
-    border: 1px solid var(--black);
-    background-color: #fff;
+    border: none;
+    box-shadow: 0px 0px 3px var(--darker);
+    background-color: white;
     border-radius: 0.33em;
 }
 
@@ -748,6 +759,8 @@ form fieldset legend {
     .result-filters {
         padding: 1.3em 0;
         border: none;
+        background-color: var(--mocha);
+        box-shadow: 0px 0px 0px var(--mocha);
     }
 
     .result-filters h2 {
