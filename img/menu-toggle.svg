@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="55.824" height="42.044" viewBox="0 0 55.824 42.044">
+<svg xmlns="http://www.w3.org/2000/svg" width="69.51" height="51.787" viewBox="0 0 69.51 51.787">
   <g id="Group_23" data-name="Group 23" transform="translate(-703.088 -296.478)">
-    <line id="Line_12" data-name="Line 12" x2="47.824" transform="translate(707.088 300.478)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="8"/>
-    <line id="Line_13" data-name="Line 13" x2="47.824" transform="translate(707.088 317.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="8"/>
-    <line id="Line_14" data-name="Line 14" x2="47.824" transform="translate(707.088 334.522)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="8"/>
+    <path id="Path_51" data-name="Path 51" d="M0,0H61.51" transform="translate(707.088 300.478)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="8"/>
+    <line id="Line_13" data-name="Line 13" x2="61.51" transform="translate(707.088 322.371)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="8"/>
+    <line id="Line_14" data-name="Line 14" x2="61.51" transform="translate(707.088 344.265)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="8"/>
   </g>
 </svg>
