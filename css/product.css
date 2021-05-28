@@ -7,8 +7,8 @@
     --lightmocha: #fff8e9;
     --mocha:		#fff0d5;
     --darkmocha: #f0d8aa;
-    --darkermocha: #dfc38f;
-    --darker: #96774a;
+    --darkermocha: #cfb077;
+    --darker: #aa8a59;
     --black: #000;
     --orange: #ffa339;
     --darkorange: #ff9419;
@@ -78,19 +78,20 @@ div .product-info-1 {
 
 button {
     border-radius: 2em;
-    background-color: var(--mocha);
     margin-top: var(--pad-and-gap);
     margin-bottom: var(--pad-and-gap);
     padding: calc(var(--pad-and-gap)/2);
     align-items: center;
-    border: 1px solid black;
+    background-color: white;
+    box-shadow: 0px 1px 3px var(--darkermocha);
+    border: none;
     font-size: 1.2em;
 }
 
 footer button:hover {
     background-color: var(--darkorange);
     color: white;
-    border: 1px solid var(--darkorange);
+    border: none;
 }
 
 footer button {
@@ -119,7 +120,7 @@ data del {
 data ins {
     text-decoration: none;
     font-size: 1.3em;
-    color: var(--black);
+    color: var(--darkorange);
 }
 
 dl dt {
@@ -151,16 +152,17 @@ form fieldset legend {
 .gallery-button {
     background-color: transparent;
     margin: 1em 0.4em;
-    height: 0.1em;
+    height: 0.4em;
     font-size: 0.7em;
-    border: 0.1rem solid var(--black);
+    border: none;
+    background-color: white;
+    box-shadow: 0px 1px 3px var(--darker);
     border-radius: 50%;
-    box-shadow: none;
     cursor: pointer;
 }
 
 .gallery-button.active {
-    background-color: var(--black);
+    background-color: var(--darkorange);
 }
 
 .gallery-controls {
@@ -425,11 +427,12 @@ form fieldset legend {
     width: 5em;
     height: 2em;
     border-radius: 4em;
-    border: 1px solid black;
     background-image: url(../img/search_bar.svg);
     background-repeat: no-repeat;
     background-size: 43%;
-    background-color: var(--lightmocha);
+    border: none;
+    box-shadow: 0px 1px 3px var(--darkermocha);
+    background-color: white;
     padding-left: calc(var(--pad-and-gap)*2);
 }
 
@@ -455,7 +458,7 @@ form fieldset legend {
 }
 
 .fav {
-    color: var(--pink);
+    color: var(--darkorange);
 }
 
 .bag {
@@ -486,7 +489,8 @@ form fieldset legend {
 
 .favourites {
     margin-top: 0;
-    background-color: var(--light-light-mocha);
+    background-color: white;
+    box-shadow: 0px 1px 3px var(--darkermocha);
     overflow: hidden;
 }
 
@@ -497,7 +501,7 @@ form fieldset legend {
 .favourites:hover {
     background-color: var(--pink);
     color: white;
-    border: 1px solid var(--pink);
+    border: none;
 }
 
 nav .navigation ul {
@@ -552,8 +556,9 @@ nav .navigation ul {
     -webkit-appearance: none;
     -moz-appearance: none;
     -o-appearance: none;
-    border: 1px solid var(--black);
-    background-color: var(--mocha);
+    border: none;
+    background-color: white;
+    box-shadow: 0px 1px 2px var(--darker);
     border-radius: 0.33em;
 }
 
@@ -624,12 +629,14 @@ nav .navigation ul {
     footer button {
         width: 70%;
         border-radius: 2em;
-        background-color: var(--light-light-mocha);
+        background-color: white;
         margin-top: var(--pad-and-gap);
         margin-bottom: var(--pad-and-gap);
         padding: calc(var(--pad-and-gap)/2);
         align-items: center;
-        border: 1px solid var(--black);
+        background-color: white;
+        box-shadow: 0px 1px 3px var(--darkermocha);
+        border: none;
         font-size: 1.8em;
     }
 
@@ -802,7 +809,7 @@ nav .navigation ul {
     }
 
     .submenu li:hover {
-        background-color: var(--violet);
+        background-color: var(--darkorange);
         border-radius: 0.7em;
     }
 
