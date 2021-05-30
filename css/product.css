@@ -1,5 +1,4 @@
 /* product.html */
-@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
 :root {
@@ -10,7 +9,7 @@
     --darkermocha: #cfb077;
     --darker: #aa8a59;
     --black: #000;
-    --orange: #ffa339;
+    --lightorange: #FFB866;
     --darkorange: #ff9419;
     --red: #F5604C;
     --pink: #f599a8;
@@ -22,7 +21,6 @@
     --violet: #e0b7f0;
     --greyed-out: #7e7363;
     --font: 'DM Sans', sans-serif;
-    --logo: 'Hepta Slab', serif;
     --pad-and-gap: 1em;
 }
 
@@ -153,7 +151,7 @@ form fieldset legend {
     background-color: transparent;
     margin: 1em 0.4em;
     height: 0.4em;
-    font-size: 0.7em;
+    font-size: 1em;
     border: none;
     background-color: white;
     box-shadow: 0px 1px 3px var(--darker);
@@ -181,6 +179,7 @@ form fieldset legend {
     position: fixed;
     justify-items: center;
     padding: var(--pad-and-gap);
+    box-shadow: 0px 0px 3px var(--darker);
 }
 
 .navigation {
@@ -334,7 +333,8 @@ form fieldset legend {
     font-size: 0.7em;
     padding: var(--pad-and-gap);
     padding-top: calc(var(--pad-and-gap)*2);
-    background-color: var(--darkmocha);
+    background-color: var(--lightorange);
+    box-shadow: 0px 0px 3px var(--darker);
     text-align: center;
     width: 100%;
 }
@@ -665,7 +665,7 @@ nav .navigation ul {
     }
 
     .gallery-button {
-        font-size: 0.9em;
+        font-size: 1.3em;
     }
 
     .page-header {

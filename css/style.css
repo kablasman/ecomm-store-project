@@ -1,10 +1,7 @@
 /* Note there a few "reset" styles given in reset.css. Review those before you begin */
-
-/* index.html */
-@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
 :root {
     --light-light-mocha: #fffaef;
     --lightmocha: #fff8e9;
@@ -13,20 +10,19 @@
     --darkermocha: #cfb077;
     --darker: #aa8a59;
     --black: #000;
-    --orange: #ffa339;
+    --lightorange: #FFB866;
     --darkorange: #ff9419;
     --red: #F5604C;
     --pink: #f599a8;
     --beige: #ecb562;
     --yellow: #ffc247;
     --green: #6DD666;
-    --blue: #51e5f8;
+    --blue: #78D7FF;
     --gold: #ffcf20;
     --violet: #e0b7f0;
     --greyed-out: #7e7363;
     --font:  'DM Sans', sans-serif;
-    --logo: 'Hepta Slab', serif;
-    --banner: 'Poppins', sans-serif;
+    --banner: 'Changa One', cursive;
     --pad-and-gap: 1em;
 }
 
@@ -165,24 +161,27 @@ form fieldset legend {
     position: fixed;
     justify-items: center;
     padding: var(--pad-and-gap);
+    box-shadow: 0px 0px 3px var(--darker);
 }
 
 .banner {
     font-size: 0.7em;
     padding: var(--pad-and-gap);
     padding-top: calc(var(--pad-and-gap)*2);
-    background-color: var(--darkorange);
+    background-color: var(--lightorange);
     text-align: center;
 }
 
 .heading {
     font-size: 1.8em;
     text-align: center;
-    background-image: url(../img/arun-clarke-EVIQTrVonSQ-unsplash.jpg);
+    background-image: url(../img/tandem-x-visuals-qluESDgit1U-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: calc(var(--pad-and-gap)*4) 0;
     color: white;
+    text-shadow: 0px 1px 3px var(--darker);
+    box-shadow: 0px 0px 3px var(--darker);
     font-family: var(--banner);
 }
 
@@ -304,7 +303,7 @@ form fieldset legend {
     float: right;
     border: none;
     box-shadow: 0px 1px 3px var(--darkermocha);
-    background-color: var(--light-light-mocha);
+    background-color: white;
     padding: 0.5em var(--pad-and-gap);
     border-radius: 2em;
     grid-row-start: 1;
@@ -428,7 +427,7 @@ form fieldset legend {
 }
 
 .menu.active li:hover {
-    background-color: var(--violet);
+    background-color: var(--darkorange);
     border-radius: 2em;
 }
 
@@ -550,7 +549,7 @@ form fieldset legend {
 }
 
 #sort {
-    background-color: var(--light-light-mocha);
+    background-color: white;
     border-radius: 2em;
     border: none;
     box-shadow: 0px 1px 3px var(--darkermocha);
@@ -723,7 +722,7 @@ form fieldset legend {
     }
 
     .submenu li:hover {
-        background-color: var(--violet);
+        background-color: var(--darkorange);
         border-radius: 0.7em;
     }
 
